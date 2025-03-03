@@ -37,7 +37,13 @@ if len(sys.argv) < 2:
 # 🔹 Récupérer la requête depuis l'argument
 SEARCH_QUERY = sys.argv[1]
 MAX_RESULTS = 100  # Nombre de résultats à récupérer
-JSON_FILE = "json\scraped_data_duckduck_search.json"
+
+# Création du dossier pour stocker les résultats JSON
+OUTPUT_DIR = "json\scraped_data_duckduck_search"
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+# Nom du fichier basé sur la requête (remplace les espaces par des underscores)
+json_filename = os.path.join(OUTPUT_DIR, f"{SEARCH_QUERY.replace(' ', '_')}.json")
 
 def scrape_duckduckgo(query, max_results):
     """Effectue une recherche sur DuckDuckGo et récupère plusieurs résultats."""
@@ -53,8 +59,11 @@ def scrape_duckduckgo(query, max_results):
 
     return results
 
+    for res in results:
+        print(f"📖 {res['title']}: {res['href']}")
+
 # 🔹 Sauvegarde des résultats en JSON
-def save_to_json(data, filename=JSON_FILE):
+def save_to_json(data, filename=json_filename):
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
     print(f"✅ Données sauvegardées dans {filename}")

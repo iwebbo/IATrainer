@@ -19,45 +19,41 @@ QUE CE SOIT DANS UNE ACTION CONTRACTUELLE, DÉLICTUELLE OU AUTRE, DÉCOULANT DE,
 OU EN RELATION AVEC LE LOGICIEL OU L'UTILISATION OU D'AUTRES INTERACTIONS AVEC LE LOGICIEL.
 """
 
-from langchain_community.utilities import DuckDuckGoSearchAPIWrapper
-from duckduckgo_search import DDGS
 import json
 import os
 import sys
+from duckduckgo_search import DDGS
 
-# 🔹 Vérifier si un argument est fourni
+# Vérifier si un argument est fourni
 if len(sys.argv) < 2:
     print("❌ Erreur : Aucun terme de recherche fourni. Exécution : python docget_duck2.py 'votre requête'")
     sys.exit(1)
 
-# 🔹 Récupérer la requête depuis l'argument
-SEARCH_QUERY = sys.argv[1]
-MAX_RESULTS = 100  # Nombre de résultats à récupérer
+# Récupérer la requête depuis l'argument
+SEARCH_QUERY = sys.argv[1] + "site:wikipedia.org"
+MAX_RESULTS = 10  # Nombre de résultats à récupérer
 
 # Création du dossier pour stocker les résultats JSON
-OUTPUT_DIR = "json\DuckDuckSearch_results_duck_llm"
+OUTPUT_DIR = "json\wikipedia_results_duck_llm"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Nom du fichier basé sur la requête (remplace les espaces par des underscores)
 json_filename = os.path.join(OUTPUT_DIR, f"{SEARCH_QUERY.replace(' ', '_')}.json")
 
 with DDGS() as ddgs:
-    results = ddgs.text(SEARCH_QUERY, max_results=MAX_RESULTS)
+    wiki_results = list(ddgs.text(SEARCH_QUERY, max_results=MAX_RESULTS))
 
-for result in results:
-    print(result)
+for res in wiki_results:
+    print(f"📖 {res['title']}: {res['href']}")
 
-# Sauvegarde en JSON
-structured_results = [
-    {
-        "title": result["title"],
-        "url": result["href"],
-        "snippet": result["body"]
-    }
-    for result in results
-]
+formatted_results = {
+    "query": SEARCH_QUERY,
+    "results": [{"title": res["title"], "link": res['href']} for res in wiki_results]
+    #"results": [{"image_url": img["image"], "title": img["title"], "source": img["url"]} for img in images]
+}
 
+# Sauvegarde dans un fichier JSON
 with open(json_filename, "w", encoding="utf-8") as json_file:
     json.dump(formatted_results, json_file, ensure_ascii=False, indent=4)
 
-print("Résultats sauvegardés dans json\search_results_duck_llm.json")
+print(f"✅ Fichier JSON sauvegardé : {json_filename}")

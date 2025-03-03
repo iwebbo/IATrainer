@@ -1,0 +1,255 @@
+{
+    "query": "github",
+    "companies": [
+        {
+            "name": "GitHub · Build and ship software on a single, collaborative platform",
+            "url": "https://github.com/",
+            "description": "A GitHub Discussions thread where a GitHub user suggests a power-up idea involving Hubot revealing a path and protecting Mona. The post has received 5 upvotes and several reactions. Below, three other users add to the discussion, suggesting Hubot could provide different power-ups depending on levels and appreciating the collaboration idea. ..."
+        },
+        {
+            "name": "Sign in to GitHub · GitHub",
+            "url": "https://github.com/login",
+            "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+        },
+        {
+            "name": "GitHub · GitHub",
+            "url": "https://github.com/github",
+            "description": "The open source community is the 💗 heart of GitHub and fundamental to how we build software today. See for yourself: GitHub Sponsors helped support more than 5k individuals and projects around the world 🌍; Open source projects on GitHub received a stunning 218 million contributions 🚀 in the last year alone; Every minute a developer creates a new release 🏄 for a public project on GitHub"
+        },
+        {
+            "name": "GitHub - Wikipedia",
+            "url": "https://en.wikipedia.org/wiki/Github",
+            "description": "GitHub (/ ˈ ɡ ɪ t h ʌ b /) is a proprietary developer platform that allows developers to create, store, manage, and share their code. It uses Git to provide distributed version control and GitHub itself provides access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project. [8] Headquartered in California, it has been a ..."
+        },
+        {
+            "name": "Get started with GitHub documentation",
+            "url": "https://docs.github.com/en/get-started",
+            "description": "With GitHub Team groups of people can collaborate across many projects at the same time in an organization account. Popular. Creating an account on GitHub. Create a personal account to get started with GitHub. Hello World. Follow this Hello World exercise to learn GitHub's pull request workflow."
+        },
+        {
+            "name": "GitHub Certifications",
+            "url": "https://examregistration.github.com/",
+            "description": "GitHub Certifications. GitHub is establishing certification paths for the product. Each certification requires you to pass one or more exams to earn that certification. Available to take GitHub Actions. This certification validates your expertise with GitHub Actions. Learn More."
+        },
+        {
+            "name": "Code review in GitHub Copilot is now in public preview",
+            "url": "https://github.blog/changelog/2025-02-26-code-review-in-github-copilot-is-now-in-public-preview/",
+            "description": "GitHub Copilot Free allows you to access 50 chat messages per month. If you reach your quota, you can upgrade on the web. GitHub Copilot in Windows Terminal. You can access the power of GitHub Copilot to get command suggestions and explanations without leaving the terminal with Terminal Chat in Windows Terminal Canary. This is available for all ..."
+        },
+        {
+            "name": "Set up Git - GitHub Docs",
+            "url": "https://docs.github.com/en/get-started/git-basics/set-up-git",
+            "description": "Each repository on GitHub is owned by a person or an organization. You can interact with the people, repositories, and organizations by connecting and following them on GitHub. For more information, see Finding inspiration on GitHub. GitHub has a great support community where you can ask for help and talk to people from around the world."
+        },
+        {
+            "name": "GitHub Pages | Websites for you and your projects, hosted directly from ...",
+            "url": "https://pages.github.com/",
+            "description": "Click the \"Set up in Desktop\" button. When the GitHub desktop app opens, save the project. If the app doesn't open, launch it and clone the repository from the app. Clone the repository. After finishing the installation, head back to GitHub.com and refresh the page. Click the \"Set up in Desktop\" button. When the GitHub desktop app opens, save ..."
+        },
+        {
+            "name": "About GitHub and Git",
+            "url": "https://docs.github.com/en/get-started/start-your-journey/about-github-and-git",
+            "description": "About GitHub. GitHub is a cloud-based platform where you can store, share, and work together with others to write code. Storing your code in a \"repository\" on GitHub allows you to: Showcase or share your work. Track and manage changes to your code over time. Let others review your code, and make suggestions to improve it."
+        },
+        {
+            "name": "Sign up to GitHub",
+            "url": "https://github.com/signup?nux_signup=true",
+            "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+        },
+        {
+            "name": "Getting started with GitHub Copilot",
+            "url": "https://github.com/features/copilot/tutorials",
+            "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+        },
+        {
+            "name": "Search · GitHub",
+            "url": "https://github.com/search?type=code&auto_enroll=true",
+            "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+        },
+        {
+            "name": "GitHub · Build and ship software on a single, collaborative platform",
+            "url": "https://github.com/home",
+            "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+        },
+        {
+            "name": "Sign up to GitHub · GitHub",
+            "url": "https://github.com/join",
+            "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+        },
+        {
+            "name": "GitHub Student Developer Pack",
+            "url": "https://education.github.com/pack",
+            "description": "Experiences. Discover the best ways to use pack offers with Experiences. Experiences are curated bundles of pack partner products, GitHub tools, and other resources that are designed for you learn new skills and make the most out of the Student Developer Pack and your journey in GitHub Education."
+        },
+        {
+            "name": "GitHub Copilot · Your AI pair programmer",
+            "url": "https://github.com/features/copilot",
+            "description": "GitHub Copilot transforms the developer experience. Backed by the leaders in AI, Copilot provides contextualized assistance throughout the software development lifecycle, from code completions and chat assistance in the IDE to code explanations and answers to docs in GitHub and more."
+        },
+        {
+            "name": "Material theme compromised? · Issue #1168 - GitHub",
+            "url": "https://github.com/microsoft/vsmarketplace/issues/1168",
+            "description": "Dear @gegtor nothing harmful was ever shipped within Material Theme. We just had an outdated sanity.io dependency used since 2016 to show release notes from sanity headless CMS, that was the only issue they found."
+        },
+        {
+            "name": "llama.cpp/examples/quantize/README.md at master - GitHub",
+            "url": "https://github.com/ggml-org/llama.cpp/blob/master/examples/quantize/README.md",
+            "description": "#obtain the official LLaMA model weights and place them in ./models ls ./models llama-2-7b tokenizer_checklist.chk tokenizer.model # [Optional] for models using BPE tokenizers ls ./models  vocab.json # [Optional] for PyTorch .bin models like Mistral-7B ls ./models  ..."
+        },
+        {
+            "name": "GitHub - amusi/CVPR2025-Papers-with-Code: CVPR 2025 论文和开源项目合集",
+            "url": "https://github.com/amusi/CVPR2025-Papers-with-Code",
+            "description": "CVPR 2025 论文和开源项目合集. Contribute to amusi/CVPR2025-Papers-with-Code development by creating an account on GitHub."
+        },
+        {
+            "name": "Pricing · Plans for every developer - GitHub",
+            "url": "https://github.com/pricing",
+            "description": "What are the differences between GitHub Free, GitHub Pro, GitHub Team, and GitHub Enterprise plans? GitHub Free is our basic plan created for individuals and small teams to collaborate on private and public repositories. GitHub Pro offers additional usage limits and functionality for advanced collaboration in individual user accounts. GitHub Team offers additional functionality for advanced ..."
+        },
+        {
+            "name": "Search · GitHub",
+            "url": "https://github.com/search?type=repositories",
+            "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+        },
+        {
+            "name": "[𝙵ree*Dow𝚗load] \"Ne Zha 2\"(2025) YTS To𝚛rent ... - GitHub",
+            "url": "https://github.com/Ne-Zha-2-IndoXXI",
+            "description": "The world of cinema is continually evolving, offering a variety of films that cater to diverse tastes, preferences, and languages. Ne Zha 2 (2025) has recently become the talk of the town, generating significant buzz among movie enthusiasts across the globe. With its intriguing storyline, engaging characters, and top-notch production, the film promises to captivate audiences in multiple ..."
+        },
+        {
+            "name": "Trending repositories on GitHub today · GitHub",
+            "url": "https://github.com/trending",
+            "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+        },
+        {
+            "name": "bratvaikoltso (Братва и Кольцо) - GitHub",
+            "url": "https://github.com/bratvaikoltso/",
+            "description": "Welcome to \"Develop With AI Powered Code Suggestions Using GitHub Copilot and VS Code\"! 👋 GitHub Copilot is an AI pair programmer that helps you write code faster and with less work. It draws context from comments and code to suggest individual lines and whole functions instantly. GitHub Copilot ..."
+        },
+        {
+            "name": "GitHub - UltimMC/Launcher: Offline Minecraft launcher.",
+            "url": "https://github.com/UltimMC/Launcher",
+            "description": "Offline Minecraft launcher. Contribute to UltimMC/Launcher development by creating an account on GitHub."
+        },
+        {
+            "name": "GitHub - 0xFA11/MultiplayerNetworkingResources: A curated list of ...",
+            "url": "https://github.com/0xFA11/MultiplayerNetworkingResources",
+            "description": "Multiplayer Networking (aka game networking or netcode), mainly focuses on the inherent synchronization challenges of multiplayer online games such as latency, jitter and packet loss — trying to mitigate with sophisticated algorithms and techniques, including prediction, compensation, reconciliation, interpolation and other mechanisms.Multiplayer networking is often deeply involved in and ..."
+        },
+        {
+            "name": "Claude 3.7 Sonnet is now available in GitHub Copilot in public preview",
+            "url": "https://github.blog/changelog/2025-02-24-claude-3-7-sonnet-is-now-available-in-github-copilot-in-public-preview/",
+            "description": "Starting today, existing GitHub Team plan organizations will begin to gain access to the enhanced billing platform: a suite of new features designed to help administrators understand and manage GitHub spend for their organizations."
+        },
+        {
+            "name": "GitHub Desktop | Simple collaboration from your desktop",
+            "url": "https://github.com/apps/desktop",
+            "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+        },
+        {
+            "name": "Git · GitHub",
+            "url": "https://github.com/git-guides",
+            "description": "Git is a distributed version control software. Version control is a way to save changes over time without overwriting previous versions. Being distributed means that every developer working with a Git repository has a copy of that entire repository - every commit, every branch, every file. If you ..."
+        },
+        {
+            "name": "A book series (2 published editions) on the JS language. - GitHub",
+            "url": "https://github.com/getify/You-Dont-Know-JS",
+            "description": "This is a series of books diving deep into the core mechanisms of the JavaScript language. This is the second edition of the book series: To read more about the motivations and perspective behind this book series, check out the Preface. If you're looking for the previous first edition books, they ..."
+        },
+        {
+            "name": "GitHub - ant-design/ant-design: An enterprise-class UI design language ...",
+            "url": "https://github.com/ant-design/ant-design",
+            "description": "🌈 Enterprise-class UI designed for web applications. 📦 A set of high-quality React components out of the box. 🛡 Written in TypeScript with predictable static types."
+        },
+        {
+            "name": "About GitHub · GitHub",
+            "url": "https://github.com/about",
+            "description": "Founded in 2007, GitHub has brought millions of developers together to discover, share, and build better software. Learn more about our executives, careers, products, and community."
+        },
+        {
+            "name": "Microsoft - GitHub",
+            "url": "https://github.com/microsoft",
+            "description": "Open source projects and samples from Microsoft. Microsoft has 6679 repositories available. Follow their code on GitHub."
+        },
+        {
+            "name": "HACS - GitHub",
+            "url": "https://github.com/hacs",
+            "description": "Home Assistant Community Store. HACS has 15 repositories available. Follow their code on GitHub."
+        },
+        {
+            "name": "World Wide Web Consortium · GitHub",
+            "url": "https://github.com/w3c",
+            "description": "We are an international community that develops open standards to ensure the long-term growth of the Web. Most of our groups do their work here. - World Wide Web Consortium"
+        },
+        {
+            "name": "Explore GitHub",
+            "url": "https://github.com/explore",
+            "description": "Explore is your guide to finding your next project, catching up with what's trending, and connecting with the GitHub community."
+        },
+        {
+            "name": "NI - GitHub",
+            "url": "https://github.com/ni",
+            "description": "NI has 249 repositories available. Follow their code on GitHub."
+        },
+        {
+            "name": "GitHub - spyder-ide/spyder: Official repository for Spyder - The ...",
+            "url": "https://github.com/spyder-ide/spyder",
+            "description": "Spyder is a powerful scientific environment written in Python, for Python, and designed by and for scientists, engineers and data analysts. It offers a unique combination of the advanced editing, analysis, debugging, and profiling functionality of a comprehensive development tool with the data exploration, interactive execution, deep inspection, and beautiful visualization capabilities of a ..."
+        },
+        {
+            "name": "Unblocked Games | Play Free Online Games Anywhere, Anytime",
+            "url": "https://unblocked-games-gg.github.io/",
+            "description": "Unblocked Games is the best place to play free online games anytime - enjoy endless fun with top unblocked games at school or work!"
+        },
+        {
+            "name": "Cybersecurity and Infrastructure Security Agency · GitHub",
+            "url": "https://github.com/cisagov",
+            "description": "Commit today, secure tomorrow. Cybersecurity and Infrastructure Security Agency has 448 repositories available. Follow their code on GitHub."
+        },
+        {
+            "name": "Github-Ranking/Top100/Top-100-stars.md at master · EvanLi/Github ...",
+            "url": "https://github.com/EvanLi/Github-Ranking/blob/master/Top100/Top-100-stars.md",
+            "description": ":star:Github Ranking:star: Github stars and forks ranking list. Github Top100 stars list of different languages. Automatically update daily. | Github仓库排名，每日自动更新 - EvanLi/Github-Ranking"
+        },
+        {
+            "name": "GitHub Features",
+            "url": "https://github.com/features",
+            "description": "Get the right tools for the job. Automate your CI/CD and DevOps workflow with GitHub Actions, build securely, manage teams and projects, and review code in one place."
+        },
+        {
+            "name": "What are code repositories? - GitHub",
+            "url": "https://github.com/resources/articles/software-development/what-are-code-repositories",
+            "description": "A code repository serves as your project's central hub, storing and managing all your source code and related files. Think of it as a smart storage system that not only safeguards your code but also tracks every change, coordinates team collaboration, and maintains a complete history of your project."
+        },
+        {
+            "name": "GitHub - grafana/grafana: The open and composable observability and ...",
+            "url": "https://github.com/grafana/grafana",
+            "description": "The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more. - GitHub - grafana/grafana: The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch ..."
+        },
+        {
+            "name": "Source Code for Sigma Web Development Course - GitHub",
+            "url": "https://github.com/CodeWithHarry/Sigma-Web-Dev-Course",
+            "description": "If you've been itching to dive into the world of web development but feel lost in a sea of English tutorials, you're in the right place! Our course is exclusively in Hindi and is crafted to guide you from being an absolute beginner to a seasoned pro, one step at a time. We're committed to your ..."
+        },
+        {
+            "name": "GitHub Discussions · Developer Collaboration & Communication Tool",
+            "url": "https://github.com/features/discussions",
+            "description": "Ask questions, share ideas, and build connections with each other—all right next to your code. GitHub Discussions enables healthy and productive software collaboration. Try now Contact sales Screenshot of a GitHub Discussions page for the 'octoinvaders' project, showing categorized discussion ..."
+        },
+        {
+            "name": "GitHub",
+            "url": "https://github.com/dashboard",
+            "description": "We would like to show you a description here but the site won't allow us."
+        },
+        {
+            "name": "FreeCAD - GitHub",
+            "url": "https://github.com/FreeCAD",
+            "description": "A library of Parts for FreeCAD. WARNING - This library is huge. It might take a long time to download and make the addons manager unresponsive for many minutes."
+        },
+        {
+            "name": "The ReadME Project · Meet the people behind the projects you love - GitHub",
+            "url": "https://github.com/readme",
+            "description": "The NVDA screen reader has helped empower a new generation of blind and low-vision developers After bringing Braille to the digital world and creating the first screen reader for the web, Dr. Asakawa is now working on an AI-enabled suitcase to help blind people navigate the world independently ..."
+        }
+    ]
+}

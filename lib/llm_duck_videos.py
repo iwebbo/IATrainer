@@ -19,45 +19,56 @@ QUE CE SOIT DANS UNE ACTION CONTRACTUELLE, DÉLICTUELLE OU AUTRE, DÉCOULANT DE,
 OU EN RELATION AVEC LE LOGICIEL OU L'UTILISATION OU D'AUTRES INTERACTIONS AVEC LE LOGICIEL.
 """
 
-from langchain_community.utilities import DuckDuckGoSearchAPIWrapper
 from duckduckgo_search import DDGS
 import json
 import os
 import sys
 
-# 🔹 Vérifier si un argument est fourni
+# Vérifier si un argument est fourni
 if len(sys.argv) < 2:
     print("❌ Erreur : Aucun terme de recherche fourni. Exécution : python docget_duck2.py 'votre requête'")
     sys.exit(1)
 
-# 🔹 Récupérer la requête depuis l'argument
+# Récupérer la requête depuis l'argument
 SEARCH_QUERY = sys.argv[1]
 MAX_RESULTS = 100  # Nombre de résultats à récupérer
 
 # Création du dossier pour stocker les résultats JSON
-OUTPUT_DIR = "json\DuckDuckSearch_results_duck_llm"
+OUTPUT_DIR = "json\Videos_results_duck_llm"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Nom du fichier basé sur la requête (remplace les espaces par des underscores)
 json_filename = os.path.join(OUTPUT_DIR, f"{SEARCH_QUERY.replace(' ', '_')}.json")
 
+# Exécution de la recherche d'images
 with DDGS() as ddgs:
-    results = ddgs.text(SEARCH_QUERY, max_results=MAX_RESULTS)
+    videos = list(ddgs.videos(SEARCH_QUERY, max_results=MAX_RESULTS))
 
-for result in results:
-    print(result)
+for vid in videos:
+    print(f"🎥 {vid['title']} - {vid['content']}")
 
-# Sauvegarde en JSON
-structured_results = [
-    {
-        "title": result["title"],
-        "url": result["href"],
-        "snippet": result["body"]
-    }
-    for result in results
-]
+# Vérifier si des résultats ont été trouvés
+if not videos:
+    print(f"❌ Aucun résultat trouvé pour '{SEARCH_QUERY}'")
+    sys.exit(1)
 
+# Structurer les résultats au format JSON
+formatted_results = {
+    "query": SEARCH_QUERY,
+    "results": [
+        {
+            "video_url": vid["content"],   # URL de la vidéo
+            "title": vid["title"],     # Titre de la vidéo
+            "description": vid.get("description", ""),  # Description (si dispo)
+            "duration": vid.get("duration", ""),    # Durée (si dispo)
+            "published": vid.get("published", "")   # Date de publication (si dispo)
+        }
+        for vid in videos
+    ]
+}
+
+# Sauvegarde dans un fichier JSON
 with open(json_filename, "w", encoding="utf-8") as json_file:
     json.dump(formatted_results, json_file, ensure_ascii=False, indent=4)
 
-print("Résultats sauvegardés dans json\search_results_duck_llm.json")
+print(f"✅ Fichier JSON sauvegardé : {json_filename}")

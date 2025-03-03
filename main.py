@@ -2,7 +2,7 @@
 Copyright (c) 2025 [A&E Coding]
 
 Permission est accordée, gratuitement, à toute personne obtenant une copie
- de ce logiciel et des fichiers de documentation associés (le "IAtrainer.py"),
+ de ce logiciel et des fichiers de documentation associés (le "IAScrapper.py"),
  de traiter le Logiciel sans restriction, y compris, sans s'y limiter, les droits
  d'utiliser, de copier, de modifier, de fusionner, de publier, de distribuer, de sous-licencier,
  et/ou de vendre des copies du Logiciel, et de permettre aux personnes à qui
@@ -23,6 +23,7 @@ OU EN RELATION AVEC LE LOGICIEL OU L'UTILISATION OU D'AUTRES INTERACTIONS AVEC L
 README:
 
 ### NOTE A AJOUTER FINIR
+Rename repo en IAScrapper ou autre en fonction de l'avancement du projet
 https://pypi.org/project/duckduckgo-search/
 Voir comment améliorer avec ca au dessus 
 
@@ -77,10 +78,15 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # 🔹 Scripts disponibles
 SCRIPTS = {
-    "1": "Search on DuckDuckGo.com",
+    "1": "Search/Scrap on DuckDuckGo.com",
     "2": "Search on Ansible Officiel Documentation",
     "3": "Search on stackoverflow.com",
-    "4": "Search DuckDuckGoSearch with LLM Format Train"
+    "4": "Search DuckDuckGoSearch with LLM Format Train",
+    "5": "Search Image DuckDuckGoSearch with LLM Format Train",
+    "6": "Search Videos DuckDuckGoSearch with LLM Format Train",
+    "7": "Search Wikipedia DuckDuckGoSearch with LLM Format Train",
+    "8": "Search Articles DuckDuckGoSearch with LLM Format Train",
+    "9": "Search Company DuckDuckGoSearch with LLM Format Train"
 }
 
 def afficher_menu():
@@ -114,6 +120,36 @@ def execute_script(choix):
         search_query = input("\n🔍 Give me the best practive of...  : ")
         print(f"\n🔍 Scraping de `{search_query}` en cours...")
         os.system(f'python lib\llm_duck.py "{search_query}" "{BASE_DIR}"')  # Lance l'entraînement du modèle
+        print("✅ Scraping terminé with LangChain, fichier JSON généré.")
+
+    elif choix == "5":
+        search_query = input("\n🔍 Search Image  ...  : ")
+        print(f"\n🔍 Scraping de `{search_query}` en cours...")
+        os.system(f'python lib\llm_duck_image.py "{search_query}" "{BASE_DIR}"')  # Lance l'entraînement du modèle
+        print("✅ Scraping terminé with LangChain, fichier JSON généré.")
+
+    elif choix == "6":
+        search_query = input("\n🔍 Search Videos  ...  : ")
+        print(f"\n🔍 Scraping de `{search_query}` en cours...")
+        os.system(f'python lib\llm_duck_videos.py "{search_query}" "{BASE_DIR}"')  # Lance l'entraînement du modèle
+        print("✅ Scraping terminé with LangChain, fichier JSON généré.")
+
+    elif choix == "7":
+        search_query = input("\n🔍 Search Wikipedia ...  : ")
+        print(f"\n🔍 Scraping de `{search_query}` en cours...")
+        os.system(f'python lib\llm_duck_wikipedia.py "{search_query}" "{BASE_DIR}"')  # Lance l'entraînement du modèle
+        print("✅ Scraping terminé with LangChain, fichier JSON généré.")
+
+    elif choix == "8":
+        search_query = input("\n🔍 Search Articles ...  : ")
+        print(f"\n🔍 Scraping de `{search_query}` en cours...")
+        os.system(f'python lib\llm_duck_articles.py "{search_query}" "{BASE_DIR}"')  # Lance l'entraînement du modèle
+        print("✅ Scraping terminé with LangChain, fichier JSON généré.")
+
+    elif choix == "9":
+        search_query = input("\n🔍 Search Company ...  : ")
+        print(f"\n🔍 Scraping de `{search_query}` en cours...")
+        os.system(f'python lib\llm_duck_company.py "{search_query}" "{BASE_DIR}"')  # Lance l'entraînement du modèle
         print("✅ Scraping terminé with LangChain, fichier JSON généré.")
 
     elif choix == "0":

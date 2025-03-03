@@ -1,327 +1,352 @@
 [
     {
-        "title": "Ansible Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/index.html",
-        "summary": "Learn how to use Ansible, a simple and powerful automation platform, with this comprehensive documentation. Find installation, configuration, usage, and development guides for Ansible and its modules, plugins, collections, and ecosystem."
+        "title": "Welcome to Python.org",
+        "link": "https://www.python.org/",
+        "summary": "The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers. Learn more. Become a Member Donate to the PSF"
     },
     {
-        "title": "Ansible (software) - Wikipedia",
-        "link": "https://en.wikipedia.org/wiki/Ansible_(software)",
-        "summary": "Ansible is an open-source software suite that enables infrastructure as code for Unix-like and Windows systems. It is agentless, uses a declarative language, and supports multiple control nodes and dynamic inventory sources."
+        "title": "Download Python | Python.org",
+        "link": "https://www.python.org/downloads/",
+        "summary": "Python is a popular programming language for various purposes. Find the latest version of Python for different operating systems, or browse the release history and download older versions."
     },
     {
-        "title": "Getting started with Ansible",
-        "link": "https://docs.ansible.com/ansible/latest/getting_started/index.html",
-        "summary": "Learn how to use Ansible to automate the management of remote systems and control their desired state. Find out how to install Ansible, create an inventory, write a playbook, and run Ansible commands on a control node."
+        "title": "Python Tutorial - W3Schools",
+        "link": "https://www.w3schools.com/python/",
+        "summary": "W3Schools offers a comprehensive and interactive Python tutorial with examples, exercises, quizzes, and references. Learn how to create web applications, handle files and databases, and get certified by completing the PYTHON course."
     },
     {
-        "title": "Ansible Documentation",
-        "link": "https://docs.ansible.com/",
-        "summary": "Learn how to use Ansible, an open-source automation tool that is simple, flexible, and powerful. Find quicklinks, guides, tutorials, and resources for users, developers, and maintainers."
+        "title": "Python For Beginners",
+        "link": "https://www.python.org/about/gettingstarted/",
+        "summary": "Learn why and how to use Python, a popular and easy-to-learn programming language. Find installation guides, tutorials, documentation, resources and FAQs for beginners and experienced programmers."
     },
     {
-        "title": "GitHub - ansible/ansible: Ansible is a radically simple IT automation ...",
-        "link": "https://github.com/ansible/ansible",
-        "summary": "Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com. - ansible/ansible"
+        "title": "The Python Tutorial — Python 3.13.2 documentation",
+        "link": "https://docs.python.org/3/tutorial/index.html",
+        "summary": "Learn the basic concepts and features of Python, a powerful and easy to learn programming language. The tutorial covers topics such as data structures, modules, classes, exceptions, input and output, and more."
     },
     {
-        "title": "Ansible Collaborative",
-        "link": "https://www.redhat.com/en/ansible-collaborative",
-        "summary": "Ansible Collaborative is a destination for Ansible users, customers, partners, and vendors to learn and share automation content. It includes Ansible projects, collections, documentation, forum, and advocacy group for Policy as Code."
+        "title": "Python (programming language) - Wikipedia",
+        "link": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+        "summary": "Python is a high-level, general-purpose programming language.Its design philosophy emphasizes code readability with the use of significant indentation. [33]Python is dynamically type-checked and garbage-collected.It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming.It is often described as a \"batteries included ..."
     },
     {
-        "title": "Ansible Tutorial for Beginners: Ultimate Playbook & Examples - Spacelift",
-        "link": "https://spacelift.io/blog/ansible-tutorial",
-        "summary": "Learn how to use Ansible, a powerful and flexible tool for automating and orchestrating cloud and on-premises infrastructure. This guide covers basic concepts, installation, inventory, ad hoc commands, playbooks, roles, and more."
+        "title": "Python Tutorial | Learn Python Programming Language",
+        "link": "https://www.geeksforgeeks.org/python-programming-language-tutorial/",
+        "summary": "Python Tutorial - Python is one of the most popular programming languages today, known for its simplicity, extensive features and library support. Its clean and straightforward syntax makes it beginner-friendly, while its powerful libraries and frameworks makes it perfect for developers. Python is: A versatile, high-level programming language."
     },
     {
-        "title": "Learning Ansible basics - Red Hat",
-        "link": "https://www.redhat.com/en/topics/automation/learning-ansible-tutorial",
-        "summary": "Ansible® is an open source IT automation engine that automates provisioning, configuration management, application deployment, orchestration, and many other IT processes.. Ansible can be used to install software, automate daily tasks, provision infrastructure and network components, improve security and compliance, patch systems, and orchestrate complex workflows."
+        "title": "Welcome to Python.org",
+        "link": "https://test.python.org/search/",
+        "summary": "The official home of the Python Programming Language"
     },
     {
-        "title": "How Ansible Works - Ansible Collaborative",
-        "link": "https://www.redhat.com/en/ansible-collaborative/how-ansible-works",
-        "summary": "Learn how Ansible is an open source IT automation software that can configure systems, deploy software, and orchestrate workflows. Compare community Ansible with Red Hat Ansible Automation Platform and explore its features and benefits."
+        "title": "Python 3.13.2 documentation",
+        "link": "https://docs.python.org/",
+        "summary": "Learn how to install, use, and extend Python 3.13.1, the latest stable version of the popular programming language. Browse the tutorial, library, language, and API references, FAQs, and more."
     },
     {
-        "title": "The Essential Ansible Tutorial: A Step by Step Guide - env0",
-        "link": "https://www.env0.com/blog/the-ultimate-ansible-tutorial-a-step-by-step-guide",
-        "summary": "Navigate to the Ansible directory: Change your directory to where the Ansible playbook is located. cd ../Ansible. Run the Ansible playbook: Execute the Ansible playbook to configure the EC2 instance. This playbook will install Docker, set up the Jenkins container, and ensure that everything is running correctly."
+        "title": "Learn Python - Free Interactive Python Tutorial",
+        "link": "https://www.learnpython.org/",
+        "summary": "Learn Python for data science, web development, or general programming with this website. Follow the chapters, complete the coding challenges, and get certified by LearnX."
     },
     {
-        "title": "Installing Ansible — Ansible Community Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html",
-        "summary": "Installing Ansible . Ansible is an agentless automation tool that you install on a single host (referred to as the control node). From the control node, Ansible can manage an entire fleet of machines and other devices (referred to as managed nodes) remotely with SSH, Powershell remoting, and numerous other transports, all from a simple command-line interface with no databases or daemons required."
+        "title": "Online Python - IDE, Editor, Compiler, Interpreter",
+        "link": "https://www.online-python.com/",
+        "summary": "Online Python IDE is a web-based tool powered by ACE code editor. This tool can be used to learn, build, run, test your python script. You can open the script from your local and continue to build using this IDE."
     },
     {
-        "title": "Ansibleとは何か 構成管理ツールの目的〜Ansible導入まで最速で理解する - Qiita",
-        "link": "https://qiita.com/Brutus/items/1894629105d61f4854bc",
-        "summary": "Ansible概要. Ansibleは、RedHat社が開発するオープンソースの構成管理ツールになります。 OSSで提供されているコミュニティ版とRedHatサポートのエンタープライズ版の2種類があり、エンタープライズ版のAnsible Towerでは、WebブラウザによるGUIでの操作が可能になります。"
+        "title": "3.13.2 Documentation - Python",
+        "link": "https://docs.python.org/3/index.html",
+        "summary": "What's new in Python 3.13? Or all \"What's new\" documents since Python 2.0. Tutorial Start here: a tour of Python's syntax and features. Library reference Standard library and builtins. Language reference Syntax and language elements. Python setup and usage How to install, configure, and use Python. Python HOWTOs In-depth topic manuals. Installing Python modules Third-party modules and PyPI.org"
     },
     {
-        "title": "Installation Guide — Ansible Community Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/installation_guide/index.html",
-        "summary": "Installation Guide . Welcome to the Ansible Installation Guide! Installing Ansible. Control node requirements; Managed node requirements; Node requirement summary"
+        "title": "Online Python Compiler (Interpreter) - Programiz",
+        "link": "https://www.programiz.com/python-programming/online-compiler/",
+        "summary": "Write and run your Python code using our online compiler. Enjoy additional features like code sharing, dark mode, and support for multiple programming languages."
     },
     {
-        "title": "Introduction to Ansible — Ansible Community Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/getting_started/introduction.html",
-        "summary": "Introduction to Ansible . Ansible provides open-source automation that reduces complexity and runs everywhere. Using Ansible lets you automate virtually any task."
+        "title": "Python Releases for Windows",
+        "link": "https://www.python.org/downloads/windows/",
+        "summary": "Note that Python 3.11.11 cannot be used on Windows 7 or earlier. No files for this release. Python 3.10.16 - Dec. 3, 2024. Note that Python 3.10.16 cannot be used on Windows 7 or earlier. No files for this release. Python 3.9.21 - Dec. 3, 2024. Note that Python 3.9.21 cannot be used on Windows 7 or earlier. No files for this release."
     },
     {
-        "title": "General tips — Ansible Community Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/tips_tricks/ansible_tips_tricks.html",
-        "summary": "Update in batches . Use the serial keyword to control how many machines you update at once in the batch. See Controlling where tasks run: delegation and local actions.. Handling OS and distro differences . Group variables files and the group_by module work together to help Ansible execute across a range of operating systems and distributions that require different settings, packages, and tools."
+        "title": "Welcome to Python.org",
+        "link": "https://www.python.org/?hl=zh-CN",
+        "summary": ">>> Python Software Foundation. The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers. Learn more. Become a Member Donate to the PSF"
     },
     {
-        "title": "Get started with the Ansible Automation Platform",
-        "link": "https://help.illinoisstate.edu/technology/server/guides/get-started-with-the-ansible-automation-platform",
-        "summary": "The Red Hat Ansible Automation Platform (AAP) is a comprehensive platform for IT automation, designed to help automate IT infrastructure, applications, and processes."
+        "title": "What's New In Python 3.13",
+        "link": "https://docs.python.org/3/whatsnew/3.13.html",
+        "summary": "An experimental just-in-time (JIT) compiler¶. When CPython is configured and built using the --enable-experimental-jit option, a just-in-time (JIT) compiler is added which may speed up some Python programs. On Windows, use PCbuild/build.bat--experimental-jit to enable the JIT or --experimental-jit-interpreter to enable the Tier 2 interpreter. Build requirements and further supporting ..."
     },
     {
-        "title": "Using Ansible command line tools",
-        "link": "https://docs.ansible.com/ansible/latest/command_guide/index.html",
-        "summary": "See also. Ansible Navigator. A command-line tool and a TUI that provides a convenient user interface for most of the native Ansible command-line utilities and allows to run Ansible automation content inside containers (Execution Environments)"
+        "title": "Python Release Python 3.9.0 | Python.org",
+        "link": "https://www.python.org/downloads/release/python-390/",
+        "summary": "Python 3.9.0. Release Date: Oct. 5, 2020 This is the stable release of Python 3.9.0. Note: The release you're looking at is Python 3.9.0, a legacy release.Python 3.11 is now the latest feature release series of Python 3.Get the latest release of 3.11.x here.. Installer news. This is the first version of Python to default to the 64-bit installer on Windows."
     },
     {
-        "title": "Using Ansible modules and plugins",
-        "link": "https://docs.ansible.com/ansible/latest/module_plugin_guide/index.html",
-        "summary": "Welcome to the Ansible guide for working with modules, plugins, and collections. Ansible modules are units of code that can control system resources or execute system commands."
+        "title": "Download Python | Python.org",
+        "link": "https://www.python.org/getit/",
+        "summary": "How to verify your downloaded files are genuine Sigstore verification. Starting with the Python 3.11.0, Python 3.10.7, and Python 3.9.14 releases, CPython release artifacts are signed with Sigstore. See our dedicated Sigstore Information page for how it works.. OpenPGP verification. Python versions before 3.14 are also signed using OpenPGP private keys of the respective release manager."
     },
     {
-        "title": "Conditionals — Ansible Community Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_conditionals.html",
-        "summary": "Now if x is initially undefined, the debug task will not be skipped because the conditional is evaluated at the time of the include and does not apply to the individual tasks.. You can apply conditions to import_playbook as well as to the other import_* statements. When you use this approach, Ansible returns a 'skipped' message for every task on every host that does not match the criteria ..."
+        "title": "Installing Python Modules — Python 3.13.2 documentation",
+        "link": "https://docs.python.org/3/installing/index.html",
+        "summary": "Key terms¶. pip is the preferred installer program. Starting with Python 3.4, it is included by default with the Python binary installers. A virtual environment is a semi-isolated Python environment that allows packages to be installed for use by a particular application, rather than being installed system wide.. venv is the standard tool for creating virtual environments, and has been part ..."
     },
     {
-        "title": "Ansible playbooks — Ansible Community Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_intro.html",
-        "summary": "Note. In Ansible 2.10 and later, we recommend you use the fully-qualified collection name in your playbooks to ensure the correct module is selected, because multiple collections can contain modules with the same name (for example, user).See Using collections in a playbook."
+        "title": "1. Command line and environment — Python 3.13.2 documentation",
+        "link": "https://docs.python.org/3/using/cmdline.html",
+        "summary": "Read commands from standard input (sys.stdin).If standard input is a terminal, -i is implied. If this option is given, the first element of sys.argv will be \"-\" and the current directory will be added to the start of sys.path.. Raises an auditing event cpython.run_stdin with no arguments.  Execute the Python code contained in script, which must be a filesystem path (absolute or ..."
     },
     {
-        "title": "What is Ansible? - Opensource.com",
-        "link": "https://opensource.com/resources/what-ansible",
-        "summary": "Ansible is a software tool that provides simple but powerful automation for cross-platform computer support. It is primarily intended for IT professionals, who use it for application deployment, updates on workstations and servers, cloud provisioning, configuration management, intra-service orchestration, and nearly anything a systems administrator does on a weekly or daily basis."
+        "title": "Welcome to Python.org",
+        "link": "https://www.python.org/?hl=zh_cn",
+        "summary": ">>> Python Software Foundation. The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers. Learn more. Become a Member Donate to the PSF"
     },
     {
-        "title": "Releases and maintenance — Ansible Community Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/reference_appendices/release_and_maintenance.html",
-        "summary": "Note. Older, unmaintained versions of ansible-core can contain unfixed security vulnerabilities (CVEs).If you are using a release of ansible-core that is no longer maintained, we strongly encourage you to upgrade as soon as possible to benefit from the latest features and security fixes. ansible-core maintenance continues for 3 releases. Thus the latest release receives security and general ..."
+        "title": "4. Using Python on Windows — Python 3.13.2 documentation",
+        "link": "https://docs.python.org/3/using/windows.html",
+        "summary": "4.1.4. Installing Without Downloading¶. As some features of Python are not included in the initial installer download, selecting those features may require an internet connection."
     },
     {
-        "title": "ansible.builtin.debug module - Print statements during execution",
-        "link": "https://docs.ansible.com/ansible/latest/collections/ansible/builtin/debug_module.html",
-        "summary": "Note. This module is part of ansible-core and included in all Ansible installations. In most cases, you can use the short module name debug even without specifying the collections keyword.However, we recommend you use the Fully Qualified Collection Name (FQCN) ansible.builtin.debug for easy linking to the module documentation and to avoid conflicting with other collections that may have the ..."
+        "title": "Introduction to Python - W3Schools",
+        "link": "https://www.w3schools.com/python/python_intro.asp",
+        "summary": "What is Python? Python is a popular programming language. It was created by Guido van Rossum, and released in 1991. It is used for: web development (server-side),"
     },
     {
-        "title": "Ansible Tutorial",
-        "link": "https://www.tutorialspoint.com/ansible/index.htm",
-        "summary": "Ansible is simple open source IT engine which automates application deployment, intra service orchestration, cloud provisioning and many other IT tools."
+        "title": "Python - Wikipedia",
+        "link": "https://ja.wikipedia.org/wiki/Python",
+        "summary": "Pythonは1991年にグイド・ヴァン・ロッサムにより開発されたプログラミング言語である。. 最初にリリースされたPythonの設計哲学は、ホワイトスペース(オフサイドルール)の顕著な使用によってコードの可読性を重視している。その言語構成とオブジェクト指向のアプローチは、プログラマが小 ..."
     },
     {
-        "title": "Ansible Cheat Sheet: Ansible Command Guide 2024 - GeeksforGeeks",
-        "link": "https://www.geeksforgeeks.org/ansible-cheat-sheet/",
-        "summary": "Ansible is a powerful open-source automation tool that is meant for configuration management and application deployment. It works with agentless architecture and a push-based mechanism."
+        "title": "operator — Standard operators as functions - Python",
+        "link": "https://docs.python.org/3/library/operator.html",
+        "summary": "The operator module also defines tools for generalized attribute and item lookups. These are useful for making fast field extractors as arguments for map(), sorted(), itertools.groupby(), or other functions that expect a function argument. operator. attrgetter (attr) ¶ operator. attrgetter (* attrs) Return a callable object that fetches attr from its operand."
     },
     {
-        "title": "Introduction to Ansible - NetworkLessons.com",
-        "link": "https://networklessons.com/network-automation/introduction-to-ansible",
-        "summary": "Ansible is an open-source configuration management tool, written in Python for configuration management, application deployment, task automation, and more."
+        "title": "Online Python Compiler - online editor",
+        "link": "https://www.onlinegdb.com/online_python_compiler",
+        "summary": "OnlineGDB is online IDE with python compiler. Quick and easy way to compile python program online. It supports python3."
     },
     {
-        "title": "User Guide — Ansible Community Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/user_guide/index.html",
-        "summary": "Welcome to the Ansible User Guide! This guide is now deprecated to improve navigation and organization. You can find all the user guide content in the following sections:"
+        "title": "Our Documentation | Python.org",
+        "link": "https://www.python.org/doc/",
+        "summary": "The official home of the Python Programming Language. Browse the docs online or download a copy of your own. Python's documentation, tutorials, and guides are constantly evolving."
     },
     {
-        "title": "Ansible - GitHub",
-        "link": "https://github.com/ansible",
-        "summary": "ansible Public . Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems."
+        "title": "Modulo operator (%) in Python - GeeksforGeeks",
+        "link": "https://www.geeksforgeeks.org/what-is-a-modulo-operator-in-python/",
+        "summary": "Output: 13 mod 5 = 3 Modulo Operator with negative float number. Stores the remainder obtained when dividing d by e, in f. For more examples, refer to How to Perform Modulo with Negative Values in Python."
     },
     {
-        "title": "Configuring Ansible — Ansible Community Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/installation_guide/intro_configuration.html",
-        "summary": "For more details and a full listing of available configurations go to configuration_settings.. You can use the ansible-config command-line utility to list your available options and inspect the current values.. For in-depth details, see Ansible Configuration Settings.. Environmental configuration . Ansible also allows configuring settings using environment variables."
+        "title": "Built-in Functions — Python 3.13.2 documentation",
+        "link": "https://docs.python.org/3/library/functions.html",
+        "summary": "compile (source, filename, mode, flags = 0, dont_inherit = False, optimize =-1) ¶. Compile the source into a code or AST object. Code objects can be executed by exec() or eval(). source can either be a normal string, a byte string, or an AST object. Refer to the ast module documentation for information on how to work with AST objects.. The filename argument should give the file from which the ..."
     },
     {
-        "title": "【ざっくりわかる】Ansibleとは何か？わかりやすく解説。",
-        "link": "https://zenn.dev/gachigachi/articles/34a62e064f67e7",
-        "summary": "次章で、Ansibleの特徴を解説します。 2.Ansibleの特徴. Ansibleが自動構成管理ツールの1つであることは前章で説明しました。"
+        "title": "70+ Python Projects for Beginners [Source Code Included]",
+        "link": "https://pythongeeks.org/python-projects/",
+        "summary": "PythonGeeks Team. The PythonGeeks Team offers industry-relevant Python programming tutorials, from web development to AI, ML and Data Science. With a focus on simplicity, we help learners of all backgrounds build their coding skills."
     },
     {
-        "title": "Ansible concepts — Ansible Community Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/getting_started/basic_concepts.html",
-        "summary": "Ansible concepts . These concepts are common to all uses of Ansible. You should understand them before using Ansible or reading the documentation."
+        "title": "string — Common string operations — Python 3.13.2 documentation",
+        "link": "https://docs.python.org/3/library/string.html",
+        "summary": "vformat (format_string, args, kwargs) ¶. This function does the actual work of formatting. It is exposed as a separate function for cases where you want to pass in a predefined dictionary of arguments, rather than unpacking and repacking the dictionary as individual arguments using the *args and **kwargs syntax. vformat() does the work of breaking up the format string into character data and ..."
     },
     {
-        "title": "Ansible 101 - Ansible for beginners - Red Hat",
-        "link": "https://www.redhat.com/en/blog/ansible-101-ansible-beginners",
-        "summary": "Red Hat Enterprise Linux A flexible, stable operating system to support hybrid cloud innovation.; Red Hat OpenShift A container platform to build, modernize, and deploy applications at scale.; Red Hat Ansible Automation Platform New version A foundation for implementing enterprise-wide automation."
+        "title": "Download Python | Python.org",
+        "link": "https://www.python.org/downloads/?ref=devkoriel",
+        "summary": "How to verify your downloaded files are genuine Sigstore verification. Starting with the Python 3.11.0, Python 3.10.7, and Python 3.9.14 releases, CPython release artifacts are signed with Sigstore. See our dedicated Sigstore Information page for how it works.. OpenPGP verification. Python versions before 3.14 are also signed using OpenPGP private keys of the respective release manager."
     },
     {
-        "title": "Ansible and How Does it Work - Spiceworks",
-        "link": "https://www.spiceworks.com/tech/devops/articles/what-is-ansible/",
-        "summary": "Ansible is an open-source, cross-platform tool for resource provisioning automation that DevOps professionals popularly use for continuous delivery of software code by taking advantage of an \"infrastructure as code\" approach."
+        "title": "venv — Creation of virtual environments — Python 3.13.2 documentation",
+        "link": "https://docs.python.org/3/library/venv.html",
+        "summary": "The venv module supports creating lightweight \"virtual environments\", each with their own independent set of Python packages installed in their site directories. A virtual environment is created on top of an existing Python installation, known as the virtual environment's \"base\" Python, and may optionally be isolated from the packages in the base environment, so only those explicitly ..."
     },
     {
-        "title": "Ansible Full Course | Ansible Tutorial For Beginners | Learn Ansible ...",
-        "link": "https://www.youtube.com/watch?v=EcnqJbxBcM0",
-        "summary": "🔥Professional Certificate Program in Cloud Computing and DevOps (India Only) - https://www.simplilearn.com/cloud-computing-devops-course?utm_campaign=EcnqJ..."
+        "title": "Learn Python Basics - GeeksforGeeks",
+        "link": "https://www.geeksforgeeks.org/python-basics/",
+        "summary": "Python Variable . Python Variable is containers that store values. Python is not \"statically typed\". An Example of a Variable in Python is a representational name that serves as a pointer to an object."
     },
     {
-        "title": "ansible.builtin.user module - Manage user accounts",
-        "link": "https://docs.ansible.com/ansible/latest/collections/ansible/builtin/user_module.html",
-        "summary": "Note. This module is part of ansible-core and included in all Ansible installations. In most cases, you can use the short module name user even without specifying the collections keyword.However, we recommend you use the Fully Qualified Collection Name (FQCN) ansible.builtin.user for easy linking to the module documentation and to avoid conflicting with other collections that may have the same ..."
+        "title": "Python Release Python 3.13.2 | Python.org",
+        "link": "https://www.python.org/downloads/release/python-3132/",
+        "summary": "Python 3.13.2. Release Date: Feb. 4, 2025 This is the second maintenance release of Python 3.13. Python 3.13 is the newest major release of the Python programming language, and it contains many new features and optimizations compared to Python 3.12. 3.13.2 is the latest maintenance release, containing almost 250 bugfixes, build improvements and documentation changes since 3.13.1."
     },
     {
-        "title": "Using Variables — Ansible Community Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_variables.html",
-        "summary": "Transforming variables with Jinja2 filters . Jinja2 filters let you transform the value of a variable within a template expression. For example, the capitalize filter capitalizes any value passed to it; the to_yaml and to_json filters change the format of your variable values. Jinja2 includes many built-in filters and Ansible supplies many more filters."
+        "title": "Python Release Python 3.12.9 | Python.org",
+        "link": "https://www.python.org/downloads/release/python-3129/",
+        "summary": "Python 3.12.9. Release Date: Feb. 4, 2025 This is the ninth maintenance release of Python 3.12. Python 3.12.9 is the latest maintenance release of Python 3.12, containing about 180 bug fixes, build improvements and documentation changes since 3.12.8."
     },
     {
-        "title": "How to build your inventory — Ansible Community Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/inventory_guide/intro_inventory.html",
-        "summary": "Default groups . Even if you do not define any groups in your inventory file, Ansible creates two default groups: all and ungrouped.The all group contains every host. The ungrouped group contains all hosts that don't have another group aside from all.Every host will always belong to at least 2 groups (all and ungrouped or all and some other group).For example, in the basic inventory above ..."
+        "title": "Python Release Python 3.10.0 | Python.org",
+        "link": "https://www.python.org/downloads/release/python-3100/",
+        "summary": "Python 3.10.0. Release Date: Oct. 4, 2021 This is the stable release of Python 3.10.0. Python 3.10.0 is the newest major release of the Python programming language, and it contains many new features and optimizations."
     },
     {
-        "title": "Conditionals - Ansible Documentation",
-        "link": "https://docs.ansible.com/ansible/2.9/user_guide/playbooks_conditionals.html",
-        "summary": "You will note a lot of 'skipped' output by default in Ansible when using this approach on systems that don't match the criteria. In many cases the group_by module can be a more streamlined way to accomplish the same thing; see Operating System and Distribution Variance.. When a conditional is used with include_* tasks instead of imports, it is applied only to the include task itself and ..."
+        "title": "The Python Standard Library — Python 3.13.2 documentation",
+        "link": "https://docs.python.org/3/library/index.html",
+        "summary": "The Python Standard Library¶. While The Python Language Reference describes the exact syntax and semantics of the Python language, this library reference manual describes the standard library that is distributed with Python. It also describes some of the optional components that are commonly included in Python distributions. Python's standard library is very extensive, offering a wide range ..."
     },
     {
-        "title": "Getting Started with Ansible A Beginners Guide",
-        "link": "https://learnansible.dev/article/Getting_Started_with_Ansible_A_Beginners_Guide.html",
-        "summary": "Getting Started with Ansible: A Beginner's Guide. Welcome to the exciting world of Ansible! If you're new to this powerful automation platform, you're in for a treat."
+        "title": "The += Operator In Python - A Complete Guide - AskPython",
+        "link": "https://www.askpython.com/python/examples/plus-equal-operator",
+        "summary": "In this lesson, we will look at the += operator in Python and see how it works with several simple examples.. The operator '+=' is a shorthand for the addition assignment operator.It adds two values and assigns the sum to a variable (left operand)."
     },
     {
-        "title": "Ansibleをはじめる人に。 - Qiita",
-        "link": "https://qiita.com/t_nakayama0714/items/fe55ee56d6446f67113c",
-        "summary": "Ansibleのインストール. それでは controllerにAnsibleを導入 しましょう。 controllerへのSSHはlocalhost:2210が転送されるようにvagrantfileで設定しています。 が、考えるのが面倒なのでteratermマクロを作りました。"
+        "title": "Python Release Python 3.12.0 | Python.org",
+        "link": "https://www.python.org/downloads/release/python-3120/",
+        "summary": "Python 3.12.0. Release Date: Oct. 2, 2023 This is the stable release of Python 3.12.0. Python 3.12.0 is the newest major release of the Python programming language, and it contains many new features and optimizations."
     },
     {
-        "title": "Ansible - Wikipedia",
-        "link": "https://en.wikipedia.org/wiki/Ansible",
-        "summary": "Ursula K. Le Guin first used the word ansible in her 1966 novel Rocannon's World. [1] [4] Etymologically, the word was a contraction of answerable, as the device allowed its users to receive answers to their messages in a reasonable amount of time, even over interstellar distances.[5]The ansible was the basis for creating a specific kind of interstellar civilization, where communications ..."
+        "title": "Python 基础教程 - 菜鸟教程",
+        "link": "https://www.runoob.com/python/python-tutorial.html",
+        "summary": "Python 基础教程 Python 是一种解释型、面向对象、动态数据类型的高级程序设计语言。 Python 由 Guido van Rossum 于 1989 年底发明，第一个公开发行版发行于 1991 年。 像 Perl 语言一样, Python 源代码同样遵循 GPL(GNU General Public License) 协议。 官方宣布，2020 年 1 月 1 日， 停止 Python 2 的更新。"
     },
     {
-        "title": "Ansible Tutorial for Beginners: Playbook, Commands & Example - Guru99",
-        "link": "https://www.guru99.com/ansible-tutorial.html",
-        "summary": "What is Ansible? Ansible is an open source automation and orchestration tool for software provisioning, configuration management, and software deployment. Ansible can easily run and configure Unix-like systems as well as Windows systems to provide infrastructure as code. It contains its own declarative programming language for system configuration and management."
+        "title": "Download Python | Python.org",
+        "link": "https://www.python.org/downloads/?hl=ES",
+        "summary": "How to verify your downloaded files are genuine Sigstore verification. Starting with the Python 3.11.0, Python 3.10.7, and Python 3.9.14 releases, CPython release artifacts are signed with Sigstore. See our dedicated Sigstore Information page for how it works.. OpenPGP verification. Python versions before 3.14 are also signed using OpenPGP private keys of the respective release manager."
     },
     {
-        "title": "Connection methods and details - Ansible Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/inventory_guide/connection_details.html",
-        "summary": "See also. ssh - connect via ssh client binary. Details on the remote_user keyword and ansible_user variable.. Controlling how Ansible behaves: precedence rules. Details on Ansible precedence rules."
+        "title": "Python Functions - GeeksforGeeks",
+        "link": "https://www.geeksforgeeks.org/python-functions/",
+        "summary": "Python Functions is a block of statements that return the specific task. The idea is to put some commonly or repeatedly done tasks together and make a function so that instead of writing the same code again and again for different inputs, we can do the function calls to reuse code contained in it over and over again."
     },
     {
-        "title": "Building an inventory — Ansible Community Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/getting_started/get_started_inventory.html",
-        "summary": "Tips for building inventories . Ensure that group names are meaningful and unique. Group names are also case sensitive. Avoid spaces, hyphens, and preceding numbers (use floor_19, not 19th_floor) in group names.. Group hosts in your inventory logically according to their What, Where, and When.. What"
+        "title": "Python Release Python 3.13.0 | Python.org",
+        "link": "https://www.python.org/downloads/release/python-3130/?featured_on=pythonbytes",
+        "summary": "Python 3.13.0. Release Date: Oct. 7, 2024 This is the stable release of Python 3.13.0. Python 3.13.0 is the newest major release of the Python programming language, and it contains many new features and optimizations compared to Python 3.12."
     },
     {
-        "title": "Introduction to modules — Ansible Community Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/module_plugin_guide/modules_intro.html",
-        "summary": "ansible webservers -m service -a \"name=httpd state=started\" ansible webservers -m ping ansible webservers -m command -a \"/sbin/reboot -t now\""
+        "title": "Python Tutor - Python Online Compiler with Visual AI Help",
+        "link": "https://pythontutor.com/",
+        "summary": "Since 2010, over 20 million people in more than 180 countries have used Python Tutor to visualize over 300 million pieces of code. It is the most widely-used program visualization tool for CS education. As a preview, here is a small example that visualizes recursion in Python:"
     },
     {
-        "title": "Fundamentals of Ansible - Coursera",
-        "link": "https://www.coursera.org/learn/fundamentals-of-ansible",
-        "summary": "Welcome to Fundamentals of Ansible, an introduction into the world of automation and configuration management! This course is designed to guide you through the basics of Ansible, a powerful tool that simplifies complex workflows and IT environments."
+        "title": "PyCharm: the Python IDE for data science and web development - JetBrains",
+        "link": "https://www.jetbrains.com/pycharm/",
+        "summary": "Stop switching between tools. PyCharm offers out-of-the-box support for Python, databases, Jupyter, Git, Conda, PyTorch, TensorFlow, Hugging Face, Django, Flask ..."
     },
     {
-        "title": "chocolatey.chocolatey.win_chocolatey module - Ansible Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/collections/chocolatey/chocolatey/win_chocolatey_module.html",
-        "summary": "Specify the source to retrieve the package from. Use chocolatey.chocolatey.win_chocolatey_source to manage global sources.. This value can either be the URL to a Chocolatey feed, a path to a folder containing .nupkg packages or the name of a source defined by chocolatey.chocolatey.win_chocolatey_source.. When Chocolatey is not yet installed, prefer using bootstrap_script instead to determine ..."
+        "title": "Download — Python 3.13.2 documentation",
+        "link": "https://docs.python.org/3/download.html",
+        "summary": "Download Python 3.13 Documentation. Last updated on: Mar 01, 2025 (20:50 UTC). To download an archive containing all the documents for this version of Python in one of various formats, follow one of links in this table."
     },
     {
-        "title": "Azure.Azcollection — Ansible Community Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/collections/azure/azcollection/index.html",
-        "summary": "Plugin Index . These are the plugins in the azure.azcollection collection: Modules . azure_rm_accesstoken_info module - Get Azure API access token. azure_rm_account_info module - Get Azure Account facts (output of az account show). azure_rm_adapplication module - Manage Azure Active Directory application. azure_rm_adapplication_info module - Get Azure Active Directory application info"
+        "title": "Python in MakeCode",
+        "link": "https://makecode.com/python",
+        "summary": "Python in MakeCode. Our Python support is called MakeCode Python.As with TypeScript, the Python implementation is a subset of the full Python languange. The TypeScript implementation in MakeCode is called Static TypeScript (STS) and similarly, MakeCode Python is often referred to as Static Python (SPY)."
     },
     {
-        "title": "Manage your Raspberry Pi fleet with Ansible - Opensource.com",
-        "link": "https://opensource.com/article/20/9/raspberry-pi-ansible",
-        "summary": "The Raspberry Pi is a small, versatile device that makes interfacing with the real world a breeze for mere mortals. The Raspberry Pi Foundation's idea was to sell the devices at such a low cost that breaking one would be sad—but not a disaster."
+        "title": "Python Release Python 3.8.0 | Python.org",
+        "link": "https://www.python.org/downloads/release/python-380/",
+        "summary": "Python 3.8.0. Release Date: Oct. 14, 2019 This is the stable release of Python 3.8.0. Note: The release you're looking at is Python 3.8.0, an outdated release.Python 3.11 is now the latest feature release series of Python 3.Get the latest release of 3.11.x here.. Major new features of the 3.8 series, compared to 3.7"
     },
     {
-        "title": "Ansible Configuration Settings",
-        "link": "https://docs.ansible.com/ansible/latest/reference_appendices/config.html",
-        "summary": "Ansible Configuration Settings . Ansible supports several sources for configuring its behavior, including an ini file named ansible.cfg, environment variables, command-line options, playbook keywords, and variables.See Controlling how Ansible behaves: precedence rules for details on the relative precedence of each source.. The ansible-config utility allows users to see all the configuration ..."
+        "title": "Python and REST APIs: Interacting With Web Services",
+        "link": "https://realpython.com/api-integration-in-python/",
+        "summary": "There's an amazing amount of data available on the Web. Many web services, like YouTube and GitHub, make their data accessible to third-party applications through an application programming interface (API).One of the most popular ways to build APIs is the REST architecture style. Python provides some great tools not only to get data from REST APIs but also to build your own Python REST APIs."
     },
     {
-        "title": "Creating a playbook — Ansible Community Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/getting_started/get_started_playbook.html",
-        "summary": "Creating a playbook . Playbooks are automation blueprints, in YAML format, that Ansible uses to deploy and configure managed nodes.. Playbook. A list of plays that define the order in which Ansible performs operations, from top to bottom, to achieve an overall goal."
+        "title": "Top 20 Python Libraries To Know in 2025 - GeeksforGeeks",
+        "link": "https://www.geeksforgeeks.org/python-libraries-to-know/",
+        "summary": "1. NumPy. NumPy is the short name for Numerical Python, which is a Python library predominantly used for technical and scientific computing. Its array-oriented computing capabilities make it an essential tool for fields such as linear algebra, statistical analysis, and machine learning.. Key Features: numpy.ndarray is a data structure, a multidimensional array that allows the storage and ..."
     },
     {
-        "title": "Using Ansible collections — Ansible Community Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/collections_guide/index.html",
-        "summary": "Welcome to the Ansible guide for working with collections. Collections are a distribution format for Ansible content that can include playbooks, roles, modules, and plugins."
+        "title": "Python Online Compiler & Interpreter - Replit",
+        "link": "https://replit.com/languages/python3",
+        "summary": "Code, create, and learn together with Python Code, collaborate, compile, run, share, and deploy Python and more online from your browser."
     },
     {
-        "title": "Windows Remote Management — Ansible Community Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/os_guide/windows_winrm.html",
-        "summary": "Warning. Using the winrm or psrp connection plugins in Ansible on MacOS in the latest releases typically fails. This is a known problem that occurs deep within the Python stack and cannot be changed by Ansible. The only workaround today is to set the environment variable OBJC_DISABLE_INITIALIZE_FORK_SAFETY=yes, no_proxy=* and avoid using Kerberos auth."
+        "title": "Assignment Operators in Python - GeeksforGeeks",
+        "link": "https://www.geeksforgeeks.org/assignment-operators-in-python/",
+        "summary": "Python operators perform operations on values and variables, including assignment, arithmetic, logical, and bitwise computations, with various assignment operators like +=, -=, and the walrus operator (:=) introduced in Python 3.8 for concise value assignments within expressions."
     },
     {
-        "title": "Ansible: get current target host's IP address - Stack Overflow",
-        "link": "https://stackoverflow.com/questions/39819378/ansible-get-current-target-hosts-ip-address",
-        "summary": "A list of all addresses is stored in a fact ansible_all_ipv4_addresses, a default address in ansible_default_ipv4.address.--- - hosts: localhost connection: local tasks: - debug: var=ansible_all_ipv4_addresses - debug: var=ansible_default_ipv4.address"
+        "title": "Python Modulo in Practice: How to Use the % Operator",
+        "link": "https://realpython.com/python-modulo-operator/",
+        "summary": "The official Python docs suggest using math.fmod() over the Python modulo operator when working with float values because of the way math.fmod() calculates the result of the modulo operation. If you're using a negative operand, then you may see different results between math.fmod(x, y) and x % y.You'll explore using the modulo operator with negative operands in more detail in the next section."
     },
     {
-        "title": "Using Ansible playbooks — Ansible Community Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/playbook_guide/index.html",
-        "summary": "Welcome to the Ansible playbooks guide. Playbooks are automation blueprints, in YAML format, that Ansible uses to deploy and configure nodes in an inventory. This guide introduces you to playbooks and then covers different use cases for tasks and plays, such as:"
+        "title": "Python 运算符 - 菜鸟教程",
+        "link": "https://www.runoob.com/python/python-operators.html",
+        "summary": "Python 运算符 什么是运算符？ 本章节主要说明Python的运算符。举个简单的例子 4 +5 = 9 。 例子中，4 和 5 被称为操作数，+ 称为运算符。 Python语言支持以下类型的运算符: 算术运算符 比较（关系）运算符 赋值运算符 逻辑运算符 位运算符 成员运算符 身份运算符 运算符优先级 接下来让我们一个个来 ..."
     },
     {
-        "title": "Ansible ドキュメント — Ansible Documentation",
-        "link": "https://docs.ansible.com/ansible/2.9_ja/index.html",
-        "summary": "Ansible について¶. Ansible は IT 自動化ツールです。 このツールを使用すると、システムの構成、ソフトウェアの展開、より高度なITタスク (継続的なデプロイメントやダウンタイムなしのローリング更新など) のオーケストレーションが可能になります。"
+        "title": "Python Release Python 3.14.0a4 | Python.org",
+        "link": "https://www.python.org/downloads/release/python-3140a4/",
+        "summary": "Python 3.14.0a4. Release Date: Jan. 14, 2025 Hello, three dot fourteen dot zero alpha four! This is an early developer preview of Python 3.14. Major new features of the 3.14 series, compared to 3.13"
     },
     {
-        "title": "Windows SSH — Ansible Community Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/os_guide/windows_ssh.html",
-        "summary": "Unlike the psrp or winrm connection plugins, the SSH connection plugin cannot get a Kerberos TGT ticket when provided with an explicit username and password. This means that the user must have a valid Kerberos ticket before running the playbook. See Kerberos Authentication for more information on how to configure, use, and troubleshoot Kerberos authentication."
+        "title": "In Python: A Closer Look at the Exponentiation Operator - ImportPython",
+        "link": "https://importpython.com/exploring-the-power-of-in-python-a-deep-dive/",
+        "summary": "Using the \" Operator with Complex Numbers** In Python, the '**' operator can be used to perform exponentiation on complex numbers. When a complex number is raised to a power, each part of the complex number (real and imaginary) is raised to that power separately."
     },
     {
-        "title": "ansible-playbook — Ansible Community Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html",
-        "summary": "Description . the tool to run Ansible playbooks, which are a configuration and multinode deployment system.See the project home page (https://docs.ansible.com) for more information.Common Options --become-method  . privilege escalation method to use (default=sudo), use ansible-doc -t become -l to list valid choices.--become-password-file ,--become-pass-file ..."
+        "title": "Python Release Python 3.13.0 | Python.org",
+        "link": "https://www.python.org/downloads/release/python-3130/",
+        "summary": "Python 3.13.0. Release Date: Oct. 7, 2024 This is the stable release of Python 3.13.0. Python 3.13.0 is the newest major release of the Python programming language, and it contains many new features and optimizations compared to Python 3.12."
     },
     {
-        "title": "Ansible: Multiple and/or conditionals in when clause",
-        "link": "https://stackoverflow.com/questions/44838421/ansible-multiple-and-or-conditionals-in-when-clause",
-        "summary": "Yes, there can be only one is defined and, if I remember correctly it should be at the end. The problem is that Ansible internally always faces an exception when a variable is not defined. Then it looks for defined condition and if it's there, it handles the exception instead of failing. But it cannot handle multiple conditions."
+        "title": "Getting Started with Python in VS Code - Visual Studio Code",
+        "link": "https://code.visualstudio.com/docs/python/python-tutorial",
+        "summary": "The Python extension also has full support for Linting. Run Python code. Click the Run Python File play button in the top-right side of the editor. The button opens a terminal panel in which your Python interpreter is automatically activated, then runs python3 hello.py (macOS/Linux) or python hello.py (Windows):"
     },
     {
-        "title": "Galaxy User Guide — Ansible Community Documentation",
-        "link": "https://docs.ansible.com/ansible/latest/galaxy/user_guide.html",
-        "summary": "Galaxy User Guide . Ansible Galaxy refers to the Galaxy website, a free site for finding, downloading, and sharing community developed collections and roles.. Use Galaxy to jump-start your automation project with great content from the Ansible community. Galaxy provides pre-packaged units of work such as roles, and collections.The collection format provides a comprehensive package of ..."
+        "title": "History of Python - GeeksforGeeks",
+        "link": "https://www.geeksforgeeks.org/history-of-python/",
+        "summary": "Python is a widely used general-purpose, high-level programming language. It was initially designed by Guido van Rossum in 1991 and developed by Python Software Foundation. It was mainly developed to emphasize code readability, and its syntax allows programmers to express concepts in fewer lines of code."
     },
     {
-        "title": "Ansible Training - Pluralsight",
-        "link": "https://www.pluralsight.com/browse/ansible-training",
-        "summary": "Ansible's ability to automate repetitive or extremely complex operations makes learning it provide some of the best ROI for learners. There's a lot to cover if you're trying to get the most of Ansible for DevOps or taking on Ansible training courses."
+        "title": "How to install Python on Windows? - GeeksforGeeks",
+        "link": "https://www.geeksforgeeks.org/how-to-install-python-on-windows/",
+        "summary": "Python is a high-level programming language that has become increasingly popular due to its simplicity, versatility, and extensive range of applications. The process of How to install Python in Windows, operating system is relatively easy and involves a few uncomplicated steps.. This article aims to take you through the process of downloading and installing Python on your Windows computer."
     },
     {
-        "title": "ansible · PyPI",
-        "link": "https://pypi.org/project/ansible/",
-        "summary": "Ansible. Ansible is a radically simple IT automation system. It handles configuration management, application deployment, cloud provisioning, ad-hoc task execution, network automation, and multi-node orchestration."
+        "title": "Python Exercises, Practice, Solution - w3resource",
+        "link": "https://www.w3resource.com/python-exercises/",
+        "summary": "Python Exercises, Practice, Solution: Python is a widely used high-level, general-purpose, interpreted, dynamic programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than possible in languages such as C++ or Java."
     },
     {
-        "title": "Getting started with Ansible 01 - Introduction - YouTube",
-        "link": "https://www.youtube.com/watch?v=3RiVKs8GHYQ",
-        "summary": "Ansible is an incredible configuration management and provisioning utility that enables you to automate all the things. In this series, you'll learn everythi..."
+        "title": "5. Data Structures — Python 3.13.2 documentation",
+        "link": "https://docs.python.org/3/tutorial/datastructures.html",
+        "summary": "You might have noticed that methods like insert, remove or sort that only modify the list have no return value printed - they return the default None. [1] This is a design principle for all mutable data structures in Python.Another thing you might notice is that not all data can be sorted or compared. For instance, [None, 'hello', 10] doesn't sort because integers can't be compared to ..."
     },
     {
-        "title": "Best Practices — Ansible Documentation",
-        "link": "https://docs.ansible.com/ansible/2.8/user_guide/playbooks_best_practices.html",
-        "summary": "Best Practices ¶. Here are some tips for making the most of Ansible and Ansible playbooks. You can find some example playbooks illustrating these best practices in our ansible-examples repository. (NOTE: These may not use all of the features in the latest release, but are still an excellent reference!)."
+        "title": "Python-Fiddle: Online Python IDE, Compiler, and Interpreter",
+        "link": "https://python-fiddle.com/",
+        "summary": "Python and Pyodide . Python is a powerful and versatile programming language known for its simplicity and readability. Developed in the late 1980s, Python has gained immense popularity due to its ease of use and its extensive range of applications."
     },
     {
-        "title": "Red Hat Ansible Automation Platform",
-        "link": "https://docs.ansible.com/platform.html",
-        "summary": "Red Hat Ansible Automation Platform. Ansible Automation Platform centralizes automation infrastructure, adds enterprise-grade capabilities, and provides supported collections."
+        "title": "Python Courses & Tutorials - Codecademy",
+        "link": "https://www.codecademy.com/catalog/language/python",
+        "summary": "Python is a general-purpose, versatile, and powerful programming language. It's a great first language because Python code is concise and easy to read."
+    },
+    {
+        "title": "The Python Language Reference — Python 3.13.2 documentation",
+        "link": "https://docs.python.org/3/reference/index.html",
+        "summary": "The Python Language Reference¶. This reference manual describes the syntax and \"core semantics\" of the language. It is terse, but attempts to be exact and complete."
+    },
+    {
+        "title": "Python Operators - W3Schools",
+        "link": "https://www.w3schools.com/python/python_operators.asp",
+        "summary": "W3Schools offers free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more."
+    },
+    {
+        "title": "Python Job Board | Python.org",
+        "link": "https://www.python.org/jobs/",
+        "summary": "The official home of the Python Programming Language. Submit a Job. Have a job that our community would be interested in? Please check our job submission how-to for details on how to file a job posting.. After you have reviewed our how-to document, please login and use this form to create a new job posting. If you have submitted jobs previously under your login, you can view them by logging in ..."
+    },
+    {
+        "title": "3. An Informal Introduction to Python",
+        "link": "https://docs.python.org/3/tutorial/introduction.html",
+        "summary": "The integer numbers (e.g. 2, 4, 20) have type int, the ones with a fractional part (e.g. 5.0, 1.6) have type float.We will see more about numeric types later in the tutorial. Division (/) always returns a float.To do floor division and get an integer result you can use the // operator; to calculate the remainder you can use %: >>> 17 / 3 # classic division returns a float 5.666666666666667 ..."
+    },
+    {
+        "title": "Python Release Python 3.12.4 | Python.org",
+        "link": "https://www.python.org/downloads/release/python-3124/",
+        "summary": "Python 3.12.4. Release Date: June 6, 2024 This is the fourth maintenance release of Python 3.12. Python 3.12 is the newest major release of the Python programming language, and it contains many new features and optimizations. 3.12.4 is the latest maintenance release, containing more than 250 bugfixes, build improvements and documentation changes since 3.12.3."
     }
 ]
