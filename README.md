@@ -5,7 +5,7 @@
 ## Technologies 
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![DuckDuckGO](https://img.shields.io/badge/DuckDuckGO-FCC624?style=for-the-badge&logo=DuckDuckGO&logoColor=black)
-![StackOverFlow](https://img.shields.io/badge/StackOverFlow-3776AB?style=for-the-badge&logo=StackOverFlow&logoColor=white) ![DocWebSite](https://img.shields.io/badge/DocWebSite-3776AB?style=for-the-badge&logo=DocWebSite&logoColor=white)
+![StackOverFlow](https://img.shields.io/badge/StackOverFlow-3776AB?style=for-the-badge&logo=StackOverFlow&logoColor=white) ![LangChain](https://img.shields.io/badge/LangChain-3776AB?style=for-the-badge&logo=LangChain&logoColor=white)
 
 ## 📌 Prerequisites
 ### 🖥 Hardware:
