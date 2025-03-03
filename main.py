@@ -28,6 +28,11 @@ Si le temps et l'envie voir comment intégrer les sites de doc comme
 https://docs.python.org/fr/3/tutorial/index.html
 https://learn.microsoft.com/fr-fr/cpp/cpp/comments-cpp?view=msvc-170 
 
+Corriger mon BUG à moi pouir LLM pour pipenv pour mettre une autre version quelque part 
+voir comment gérer pipenv et intégrer dans ansible 
+
+++ Voir ajouter scrappe json langchain sso intranet site (pro plus tards)
+
 pip install beautifulsoup4 requests playwright json fpdf duckduckgo_search langchain-community os time langchain-community
 playwright install 
 
