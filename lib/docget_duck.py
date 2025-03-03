@@ -78,7 +78,68 @@ def scrape_duckduckgo(query):
 
     return results
 
-# 🔹 Sauvegarde en JSONL
+def scrape_duckduckgo2(query, max_results=50):
+    results = []
+    loaded_links = set()  # ✅ Stocker les liens déjà récupérés pour éviter les doublons
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=False)  # ✅ Voir le navigateur en action
+        page = browser.new_page()
+
+        # 🔹 Charger la page avec la recherche
+        search_url = f"{BASE_URL}{query.replace(' ', '+')}&ia=web"
+        print(f"🔍 URL chargée : {search_url}")
+        page.goto(search_url, timeout=60000)
+
+        # ✅ Attendre que les premiers résultats apparaissent
+        page.wait_for_selector("h2 a", timeout=20000)
+
+        while len(results) < max_results:
+            # 🔹 Récupérer les résultats visibles
+            posts = page.query_selector_all("article")
+
+            for post in posts:
+                title_element = post.query_selector("h2 a")
+                link_element = post.query_selector("h2 a[href]")
+                summary_element = post.query_selector(".result__snippet")
+
+                if title_element and link_element:
+                    title = title_element.inner_text().strip()
+                    link = link_element.get_attribute("href")
+                    summary = summary_element.inner_text().strip() if summary_element else ""
+
+                    # 🔹 Éviter les doublons
+                    if link not in loaded_links:
+                        results.append({"title": title, "link": link, "summary": summary})
+                        loaded_links.add(link)  # ✅ Ajouter le lien au set pour éviter la duplication
+
+                # 🔹 Stop si max atteint
+                if len(results) >= max_results:
+                    break
+
+            # 🔽 **Scroll vers le bas pour charger les nouveaux résultats**
+            print("🔽 Scroll vers le bas...")
+            page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+            time.sleep(2)  # ⏳ Pause pour laisser les résultats charger
+
+            # 🔽 **Vérifier et cliquer sur le bouton "Plus de résultats"**
+            more_results_btn = page.query_selector("a:has-text('Plus de résultats'), a:has-text('More results')")
+
+            if more_results_btn:
+                print("🔽 Clic sur 'Plus de résultats'...")
+                more_results_btn.click()  # ✅ Clic automatique
+                time.sleep(3)  # ⏳ Pause pour permettre le chargement
+            else:
+                print("🚫 Aucun bouton 'Plus de résultats' détecté.")
+                break  # 🔥 Sortie de la boucle si pas de bouton
+
+        browser.close()
+
+    return results
+
+
+
+# 🔹 Sauvegarde en JSON
 def save_to_json(data, filename=JSON_FILE):
     """Sauvegarde les données en JSON"""
     with open(filename, "w", encoding="utf-8") as f:
@@ -86,15 +147,15 @@ def save_to_json(data, filename=JSON_FILE):
     print(f"✅ Données sauvegardées dans {filename}")
 
 if __name__ == "__main__":
-    scraped_data = scrape_duckduckgo(SEARCH_QUERY)
+    scraped_data = scrape_duckduckgo2(SEARCH_QUERY)
     if scraped_data:
         save_to_json(scraped_data)
     else:
         print("❌ Aucun résultat trouvé.")
     
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__)) 
-    DUCK_PATH = os.path.join(BASE_DIR, "scraper_duck2.py")
+    # BASE_DIR = os.path.dirname(os.path.abspath(__file__)) 
+    # DUCK_PATH = os.path.join(BASE_DIR, "scraper_duck2.py")
 
-    print("📄 Scrapping all link founds and Génération du PDF...")
-    os.system(f'python "{DUCK_PATH}"')
-    print("✅ Finish.")
+    # print("📄 Scrapping all link founds and Génération du PDF...")
+    # os.system(f'python "{DUCK_PATH}"')
+    # print("✅ Finish.")

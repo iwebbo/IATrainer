@@ -13,7 +13,7 @@ if len(sys.argv) < 2:
 
 # 🔹 Récupérer la requête depuis l'argument
 BASE_URL = sys.argv[1]
-JSON_FILE = "lib\scrap\scrapped_menu_links_doc.json"
+JSON_FILE = "json\scrapped_menu_links_doc.json"
 
 def get_full_menu_links():
     """Utilise Playwright pour ouvrir les sous-menus et extraire tous les liens."""
@@ -58,6 +58,6 @@ if __name__ == "__main__":
     BASE_DIR = os.path.dirname(os.path.abspath(__file__)) 
     DOC_PATH = os.path.join(BASE_DIR, "scraper_ansible.py")
 
-    print("📄 Scrapping all link founds and Génération du PDF...")
-    os.system(f'python "{DOC_PATH}"')
-    print("✅ Finish.")
+    # print("📄 Scrapping all link founds and Génération du PDF...")
+    # os.system(f'python "{DOC_PATH}"')
+    # print("✅ Finish.")

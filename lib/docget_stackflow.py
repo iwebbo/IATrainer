@@ -28,11 +28,20 @@ playwright install
 """
 from playwright.sync_api import sync_playwright
 import json
+import sys
+import os
+
+# 🔹 Vérifier si un argument est fourni
+if len(sys.argv) < 2:
+    print("❌ Erreur : Aucun terme de recherche fourni. Exécution : python docget_stackflow.py 'votre requête'")
+    sys.exit(1)
+
+# 🔹 Récupérer la requête depuis l'argument
+SEARCH_QUERY = sys.argv[1]
 
 # 🔹 Configuration
 BASE_URL = "https://stackoverflow.com/search?q="
-SEARCH_QUERY = "Ansible Windows role"
-OUTPUT_FILE = "scraped_data.jsonl"
+JSON_FILE = "json\scraped_data_stackflow.json"
 
 def scrape_with_playwright(query):
     results = []
@@ -58,14 +67,21 @@ def scrape_with_playwright(query):
     return results
 
 # 🔹 Sauvegarde en JSONL
-def save_to_jsonl(data, filename=OUTPUT_FILE):
+def save_to_json(data, filename=JSON_FILE):
+    """Sauvegarde les données en JSON"""
     with open(filename, "w", encoding="utf-8") as f:
-        for entry in data:
-            json.dump(entry, f)
-            f.write("\n")
+        json.dump(data, f, indent=4, ensure_ascii=False)  # ✅ Écriture en JSON formaté
     print(f"✅ Données sauvegardées dans {filename}")
+
 
 if __name__ == "__main__":
     scraped_data = scrape_with_playwright(SEARCH_QUERY)
     if scraped_data:
-        save_to_jsonl(scraped_data)
+        save_to_json(scraped_data)
+
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__)) 
+    STACK_PATH = os.path.join(BASE_DIR, "scraper_stack.py")
+
+    # print("📄 Scrapping all link founds and Génération du PDF...")
+    # os.system(f'python "{STACK_PATH}"')
+    # print("✅ Finish.")

@@ -22,10 +22,14 @@ OU EN RELATION AVEC LE LOGICIEL OU L'UTILISATION OU D'AUTRES INTERACTIONS AVEC L
 """
 README:
 
+### NOTE A AJOUTER FINIR
+https://pypi.org/project/duckduckgo-search/ ca exemple encore ... voir ce qu'on peut faire 
+Si le temps et l'envie voir comment intégrer les sites de doc comme 
+https://docs.python.org/fr/3/tutorial/index.html
+https://learn.microsoft.com/fr-fr/cpp/cpp/comments-cpp?view=msvc-170 
 
- UPDATE !!
-pip install beautifulsoup4 requests playwright json fpdf 
-playwright install
+pip install beautifulsoup4 requests playwright json fpdf duckduckgo_search langchain-community os time langchain-community
+playwright install 
 
 """
 
@@ -37,10 +41,10 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # 🔹 Scripts disponibles
 SCRIPTS = {
-    "1": "Scraper DuckDuckGo",
-    "2": "Scraper la documentation",
-    "3": "Transformer les données en PDF",
-    "4": "Effectuer l'entraînement du modèle"
+    "1": "Scraper DuckDuckGo.com",
+    "2": "Scraper la documentation Ansible",
+    "3": "Scraper stackoverflow.com",
+    "4": "Scraper DuckDuckGo.com with LLMChain"
 }
 
 def afficher_menu():
@@ -55,24 +59,26 @@ def execute_script(choix):
     if choix == "1":
         search_query = input("\n🔍 Entrez votre requête pour DuckDuckGo : ")
         print(f"\n🔍 Scraping de `{search_query}` en cours...")
-        os.system(f'python lib\docget_duck.py "{search_query}" "{BASE_DIR}"')  # 🔥 Passe la requête comme argument
+        os.system(f'python lib\docget_duck3.py "{search_query}" "{BASE_DIR}"')  # 🔥 Passe la requête comme argument
         print("✅ Scraping terminé, fichier JSON généré.")
 
     elif choix == "2":
         search_query = input("\n🔍 Entrez votre URL de documentation https://docs.ansible.com/ansible/latest/getting_started/index.html : ")
         print(f"\n🔍 Scraping de `{search_query}` en cours...")
-        os.system(f'python lib\docsite_link.py "{search_query}" "{BASE_DIR}"')  # 🔥 Passe la requête comme argument
+        os.system(f'python lib\docget_ansible.py "{search_query}" "{BASE_DIR}"')  # 🔥 Passe la requête comme argument
         print("✅ Scraping terminé, fichier JSON généré.")
 
     elif choix == "3":
-        print("\n📄 Génération des PDF en cours...")
-        os.system("python generate_pdf.py")  # Script qui transforme les données en PDF
-        print("✅ PDF généré avec succès.")
+        search_query = input("\n🔍 Entrez votre requête pour StackOverFlow : ")
+        print(f"\n🔍 Scraping de `{search_query}` en cours...")
+        os.system(f'python lib\docget_stackflow.py "{search_query}" "{BASE_DIR}"')  # 🔥 Passe la requête comme argument
+        print("✅ Scraping terminé, fichier JSON généré.")
 
     elif choix == "4":
-        print("\n🚀 Entraînement du modèle en cours...")
-        os.system("python train_model.py")  # Lance l'entraînement du modèle
-        print("✅ Entraînement terminé avec succès.")
+        search_query = input("\n🔍 Give me the best practive of...  : ")
+        print(f"\n🔍 Scraping de `{search_query}` en cours...")
+        os.system(f'python lib\docget_duck2.py "{search_query}" "{BASE_DIR}"')  # Lance l'entraînement du modèle
+        print("✅ Scraping terminé with LangChain, fichier JSON généré.")
 
     elif choix == "0":
         print("👋 Fin du programme. À bientôt !")

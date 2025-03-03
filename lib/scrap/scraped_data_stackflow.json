@@ -1,0 +1,77 @@
+[
+    {
+        "title": "problems with model convergence: Error in ans.ret[meth, ] <- c(ans$par, ans$value, ans$feval...",
+        "link": "https://stackoverflow.com/questions/44727311/problems-with-model-convergence-error-in-ans-retmeth-canspar-ansvalu?r=SearchResults",
+        "summary": "Trying to solve via the following resources and getting a new error: Error in ans.ret[meth, ] <- c(ans$par, ans$value, ans$fevals, ans$gevals, : number of items to replace is not a multiple of …"
+    },
+    {
+        "title": "Python modulo diff ans?",
+        "link": "https://stackoverflow.com/questions/67224161/python-modulo-diff-ans?r=SearchResults",
+        "summary": "How i resolve this error as i know f3 ans is correct F1=f1*f2*f3 print(F1%mod) or you do either in this format F1=(((f1%mod)*(f2%mod))%mod*(f3%mod))%mod you get same ans as per modulo property . … i am using same propery then why i am geeting diff ans …"
+    },
+    {
+        "title": "Huffman vs. ANS",
+        "link": "https://stackoverflow.com/questions/48112920/huffman-vs-ans?r=SearchResults",
+        "summary": "It had used only Huffman until I discovered ANS which I implemented as well. … My test image compressed with these two algorithms yielded the following compression rations: Huffman: 10.48x ANS: 10.56x Indeed ANS proved to be better but only slightly. …"
+    },
+    {
+        "title": "Equivalent of matlab 'ans' in R [duplicate]",
+        "link": "https://stackoverflow.com/questions/3082716/equivalent-of-matlab-ans-in-r?r=SearchResults",
+        "summary": "In matlab, you can re-use the result of the (non affected) preceding calculous: it is stored in variable ans. Does R has something equivalent ? …"
+    },
+    {
+        "title": "Matlab plot(x,ans)?",
+        "link": "https://stackoverflow.com/questions/40009768/matlab-plotx-ans?r=SearchResults",
+        "summary": "ans\". … I tried to make ans using a variable like c = Tridiag(e,f,g,r); plot (x,c) but this doesnt work. Any help would be greatly appeciated …"
+    },
+    {
+        "title": "What is Ans in javascript?",
+        "link": "https://stackoverflow.com/questions/51939109/what-is-ans-in-javascript?r=SearchResults",
+        "summary": "var Ans = confirm(\"Are you sure you want to leave?\"); if(Ans==true) { return true; else { return false; } And I was really confused. Ans probably stands for answer, but what does it do? …"
+    },
+    {
+        "title": "Testing if a checkbox is checked with jQuery",
+        "link": "https://stackoverflow.com/questions/4813219/testing-if-a-checkbox-is-checked-with-jquery?r=SearchResults",
+        "summary": "$(\"#ans\").val() will always give me one right in this case: <input type=\"checkbox\" id=\"ans\" value=\"1\" /> …"
+    },
+    {
+        "title": "scapy summary DNS Ans",
+        "link": "https://stackoverflow.com/questions/21392767/scapy-summary-dns-ans?r=SearchResults",
+        "summary": "when I do .summary() with scapy I get the following result back 'DNS Ans \"ee-in-f139.1e100.net.\"' … which gives me back the hostname and I filter out the DNS Ans. I was hoping that scapy returns just the hostname without me filtering it. …"
+    },
+    {
+        "title": "Using uninitialized memory for variable ans",
+        "link": "https://stackoverflow.com/questions/65974210/using-uninitialized-memory-for-variable-ans?r=SearchResults",
+        "summary": "I have a written code that keeps giving me 2 errors. 1st one is using uninitialized memory ans. 2nd is using uninitialized memory ans[ BYTE:0]. I am using Microsoft Visual Studio 2019. … } else { r++; } f ^= 1;// 0001 // 0001 // 0000 } cout << ans[1] << \" \" << ans[0]; return 0; } …"
+    },
+    {
+        "title": "How to hide ans",
+        "link": "https://stackoverflow.com/questions/23457363/how-to-hide-ans?r=SearchResults",
+        "summary": "to see if they have the same value so I use the eq() function and define the result as R: R = eq(A,B) The answer is: R = [0 1 0 1 1] This works fine, the problem is that I also get this out: ans … = [0 1 0 1 1] How do I hide this \"ans\" or even better - Turn it down? …"
+    },
+    {
+        "title": "JAVA cannot find symbol - variable ans",
+        "link": "https://stackoverflow.com/questions/64039118/java-cannot-find-symbol-variable-ans?r=SearchResults",
+        "summary": "= inp1 + inp2; } else if (opo == \"s\"){ double ans = inp1 - inp2; } else if (opo == \"m\"){ double ans = inp1 * inp2; } else if (opo == \"d\"){ … double ans = inp1 / inp2; } System.out.println(\"your answer is \" + (String)ans); } } …"
+    },
+    {
+        "title": "Why do 'floor ans*ans' and 'ceil ans*ans' (without any value assigned to ans) give a matrix ...",
+        "link": "https://stackoverflow.com/questions/46842420/why-do-floor-ansans-and-ceil-ansans-without-any-value-assigned-to-ans-gi?r=SearchResults",
+        "summary": "I have been messing around in Matlab and had the same outputs when I entered the following statements in the command window: >> floor ans*ans ans = 97 110 115 42 97 110 115 >> ceil ans … *ans ans = 97 110 115 42 97 110 115 I couldn't find any reference about this on the documentation page. …"
+    },
+    {
+        "title": "Removing the ans in the output [duplicate]",
+        "link": "https://stackoverflow.com/questions/18041164/removing-the-ans-in-the-output?r=SearchResults",
+        "summary": "worker''s pay is $ %5.2f ', pay) output: salary Please enter the number of hours worked : 2 Please enter the hourly wage : $ 2 The worker's pay is $ 4.00 ans … = 4 i want to remove the ans = 4.. how will I do that? …"
+    },
+    {
+        "title": "How does the value variable ans is zero? [duplicate]",
+        "link": "https://stackoverflow.com/questions/52431501/how-does-the-value-variable-ans-is-zero?r=SearchResults",
+        "summary": "Here in the code I am getting value of ans 0 but why is it #include<stdio.h> int main() { int i=9,j=10,k=1,ans; ans=i<j>k; printf(\"%d%d%d%d\",i,j,k,ans); return …"
+    },
+    {
+        "title": "why UPDATE answertable SET Ans-Farsi-value = `خیلی ناراضی` WHERE Ans-value =`Very Dissatisfi... [duplicate]",
+        "link": "https://stackoverflow.com/questions/63716436/why-update-answertable-set-ans-farsi-value-%d8%ae%db%8c%d9%84%db%8c-%d9%86%d8%a7%d8%b1%d8%a7%d8%b6%db%8c-where-ans-value-ver?r=SearchResults",
+        "summary": "UPDATE answertable SET Ans-Farsi-value = `خیلی ناراضی` WHERE Ans-value =`Very Dissatisfied`; generates error #1064 - You have an error in your SQL syntax; check the manual that corresponds to your MariaDB … server version for the right syntax to use near '-Farsi-value = خیلی ناراضی WHERE Ans-value =Very Dissatisfied' at line 1 can anyone tell me what is wrong with this query. …"
+    }
+]
