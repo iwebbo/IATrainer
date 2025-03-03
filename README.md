@@ -20,21 +20,39 @@ JSON
 
 ### 🔧 Install
 
-Your dataset should follow this structure:
+Follow the steps regarding installation:
 ```
 git clone 
 cd IATrainer
 pip install -r requirements.txt
 
 ```
-👉 Find datasets: Roboflow Universe
 
 ### 🔧 Launch IT
 
-Your dataset should follow this structure:
+Launch the main.py:
 ```
 python main.py
 
-update this part 
+```
+
+### 🔧 Increase MAX_RESULTS
+
+Change value of MAX_RESULTS:
+```
+MAX_RESULTS = 100  # Numbers of results - can be increase
+WARNING : Wikipedia don't like to have more increase results, ISSUE
 
 ```
+
+### 🔧 IATrainer - Starting
+![image](https://github.com/user-attachments/assets/6ede9615-723d-4476-876b-dc6804c73ce4)
+
+### 🔧 IATrainer - Example of research on Wikipedia 
+![image](https://github.com/user-attachments/assets/dea499a3-4ccb-4593-98e6-70ce6ea3d0e8)
+
+### 🔧 IATrainer - Example of research with LangChain format for a LLM
+![image](https://github.com/user-attachments/assets/18180e43-028c-41ad-95c3-5b890d3e3fc5)
+
+
+
