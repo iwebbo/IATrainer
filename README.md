@@ -22,7 +22,7 @@ JSON
 
 Follow the steps regarding installation:
 ```
-git clone 
+git clone https://github.com/iwebbo/IATrainer.git
 cd IATrainer
 pip install -r requirements.txt
 
