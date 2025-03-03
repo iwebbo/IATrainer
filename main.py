@@ -22,25 +22,11 @@ OU EN RELATION AVEC LE LOGICIEL OU L'UTILISATION OU D'AUTRES INTERACTIONS AVEC L
 """
 README:
 
-### NOTE A AJOUTER FINIR
-Rename repo en IAScrapper ou autre en fonction de l'avancement du projet
-https://pypi.org/project/duckduckgo-search/
-Voir comment améliorer avec ca au dessus 
-
-Voir VAR MAX RESULT pour DUCK 
-French to english 
 Faire requirements.txt pîp voir 
-Gérér import AnythingLLM aprés workspace dédié pour ca et le créer 
-voir comment API + créer workspace + ansible 
+- Gérér import AnythingLLM aprés workspace dédié pour ca et le créer 
+- voir comment API + créer workspace + ansible 
+- voir comment gérer pipenv et intégrer dans ansible 
 
-
-Si le temps et l'envie voir comment intégrer les sites de doc comme 
-https://docs.python.org/fr/3/tutorial/index.html
-https://learn.microsoft.com/fr-fr/cpp/cpp/comments-cpp?view=msvc-170 
-
-voir comment gérer pipenv et intégrer dans ansible 
-
-++ Voir ajouter scrappe json langchain sso intranet site (pro plus tards)
 
 pip install beautifulsoup4 requests playwright json fpdf duckduckgo_search langchain-community os time langchain-community 
 playwright install 

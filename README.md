@@ -16,15 +16,15 @@ A computer capable of running Python
 
 Python 3.8+
 PDF
-Notepad++
+JSON
 
 ### 🔧 Install
 
 Your dataset should follow this structure:
 ```
-git clone
-cd repo
-pip install requirements
+git clone 
+cd IATrainer
+pip install -r requirements.txt
 
 ```
 👉 Find datasets: Roboflow Universe
