@@ -23,17 +23,25 @@ OU EN RELATION AVEC LE LOGICIEL OU L'UTILISATION OU D'AUTRES INTERACTIONS AVEC L
 README:
 
 ### NOTE A AJOUTER FINIR
-https://pypi.org/project/duckduckgo-search/ ca exemple encore ... voir ce qu'on peut faire 
+https://pypi.org/project/duckduckgo-search/
+Voir comment améliorer avec ca au dessus 
+
+Voir VAR MAX RESULT pour DUCK 
+French to english 
+Faire requirements.txt pîp voir 
+Gérér import AnythingLLM aprés workspace dédié pour ca et le créer 
+voir comment API + créer workspace + ansible 
+
+
 Si le temps et l'envie voir comment intégrer les sites de doc comme 
 https://docs.python.org/fr/3/tutorial/index.html
 https://learn.microsoft.com/fr-fr/cpp/cpp/comments-cpp?view=msvc-170 
 
-Corriger mon BUG à moi pouir LLM pour pipenv pour mettre une autre version quelque part 
 voir comment gérer pipenv et intégrer dans ansible 
 
 ++ Voir ajouter scrappe json langchain sso intranet site (pro plus tards)
 
-pip install beautifulsoup4 requests playwright json fpdf duckduckgo_search langchain-community os time langchain-community
+pip install beautifulsoup4 requests playwright json fpdf duckduckgo_search langchain-community os time langchain-community 
 playwright install 
 
 """
@@ -41,52 +49,75 @@ playwright install
 import os
 import json
 import sys
+import time
+
+
+BANNER = """
+ █████╗  ██████╗ ███████╗
+██╔══██╗██╔════╝ ██╔════╝
+███████║██║  ███╗█████╗  
+██╔══██║██║   ██║██╔══╝  
+██║  ██║╚██████╔╝███████╗
+╚═╝  ╚═╝ ╚═════╝ ╚══════╝
+
+        🚀 A&ECoding - AITrainer 🚀
+     --------------------------------------
+     > Generate a data with LanGChain to train your LLM Model !
+     --------------------------------------
+"""
+
+def show_banner():
+    os.system("cls" if os.name == "nt" else "clear")  # Nettoie la console
+    print(BANNER)
+    time.sleep(1)  # Petite pause pour l'effet visuel
+
+show_banner()
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # 🔹 Scripts disponibles
 SCRIPTS = {
-    "1": "Scraper DuckDuckGo.com",
-    "2": "Scraper la documentation Ansible",
-    "3": "Scraper stackoverflow.com",
-    "4": "Scraper DuckDuckGo.com with LLMChain"
+    "1": "Search on DuckDuckGo.com",
+    "2": "Search on Ansible Officiel Documentation",
+    "3": "Search on stackoverflow.com",
+    "4": "Search DuckDuckGoSearch with LLM Format Train"
 }
 
 def afficher_menu():
     """Affiche le menu pour sélectionner une action."""
-    print("\n📌 Sélectionnez une action :")
+    print("\n📌 Choose an action :")
     for key, value in SCRIPTS.items():
         print(f"{key}. {value}")
-    print("0. Quitter")
+    print("0. Exit")
 
 def execute_script(choix):
     """Exécute un script selon le choix."""
     if choix == "1":
         search_query = input("\n🔍 Entrez votre requête pour DuckDuckGo : ")
         print(f"\n🔍 Scraping de `{search_query}` en cours...")
-        os.system(f'python lib\docget_duck3.py "{search_query}" "{BASE_DIR}"')  # 🔥 Passe la requête comme argument
+        os.system(f'python lib\search_duck.py "{search_query}" "{BASE_DIR}"')  # 🔥 Passe la requête comme argument
         print("✅ Scraping terminé, fichier JSON généré.")
 
     elif choix == "2":
         search_query = input("\n🔍 Entrez votre URL de documentation https://docs.ansible.com/ansible/latest/getting_started/index.html : ")
         print(f"\n🔍 Scraping de `{search_query}` en cours...")
-        os.system(f'python lib\docget_ansible.py "{search_query}" "{BASE_DIR}"')  # 🔥 Passe la requête comme argument
+        os.system(f'python lib\search_ansible.py "{search_query}" "{BASE_DIR}"')  # 🔥 Passe la requête comme argument
         print("✅ Scraping terminé, fichier JSON généré.")
 
     elif choix == "3":
         search_query = input("\n🔍 Entrez votre requête pour StackOverFlow : ")
         print(f"\n🔍 Scraping de `{search_query}` en cours...")
-        os.system(f'python lib\docget_stackflow.py "{search_query}" "{BASE_DIR}"')  # 🔥 Passe la requête comme argument
+        os.system(f'python lib\stackflow.py "{search_query}" "{BASE_DIR}"')  # 🔥 Passe la requête comme argument
         print("✅ Scraping terminé, fichier JSON généré.")
 
     elif choix == "4":
         search_query = input("\n🔍 Give me the best practive of...  : ")
         print(f"\n🔍 Scraping de `{search_query}` en cours...")
-        os.system(f'python lib\docget_duck2.py "{search_query}" "{BASE_DIR}"')  # Lance l'entraînement du modèle
+        os.system(f'python lib\llm_duck.py "{search_query}" "{BASE_DIR}"')  # Lance l'entraînement du modèle
         print("✅ Scraping terminé with LangChain, fichier JSON généré.")
 
     elif choix == "0":
-        print("👋 Fin du programme. À bientôt !")
+        print("👋 Good Bye. See you !")
         sys.exit(0)
 
     else:
@@ -95,5 +126,5 @@ def execute_script(choix):
 if __name__ == "__main__":
     while True:
         afficher_menu()
-        choix = input("\nEntrez votre choix : ")
+        choix = input("\nPrompt choice : ")
         execute_script(choix)

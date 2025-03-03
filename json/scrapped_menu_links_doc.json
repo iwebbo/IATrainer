@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Introduction to Ansible",
+        "url": "https://docs.ansible.com/ansible/latest/getting_started/introduction.html"
+    },
+    {
+        "title": "Start automating with Ansible",
+        "url": "https://docs.ansible.com/ansible/latest/getting_started/get_started_ansible.html"
+    },
+    {
+        "title": "Building an inventory",
+        "url": "https://docs.ansible.com/ansible/latest/getting_started/get_started_inventory.html"
+    },
+    {
+        "title": "Creating a playbook",
+        "url": "https://docs.ansible.com/ansible/latest/getting_started/get_started_playbook.html"
+    },
+    {
+        "title": "Ansible concepts",
+        "url": "https://docs.ansible.com/ansible/latest/getting_started/basic_concepts.html"
+    }
+]

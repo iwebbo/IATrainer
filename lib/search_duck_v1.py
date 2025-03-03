@@ -19,13 +19,6 @@ QUE CE SOIT DANS UNE ACTION CONTRACTUELLE, DÉLICTUELLE OU AUTRE, DÉCOULANT DE,
 OU EN RELATION AVEC LE LOGICIEL OU L'UTILISATION OU D'AUTRES INTERACTIONS AVEC LE LOGICIEL.
 """
 
-"""
-README:
-
-pip install beautifulsoup4 requests playwright
-playwright install
-
-"""
 from playwright.sync_api import sync_playwright
 import json
 import time
