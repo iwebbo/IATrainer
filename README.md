@@ -1,6 +1,4 @@
-# README : IATrainer on Python
-
-#### ENGLISH VERSION 
+# IATrainer on Python
 
 ## Technologies 
 
