@@ -29,7 +29,7 @@ import os
 
 # 🔹 Vérifier si un argument est fourni
 if len(sys.argv) < 2:
-    print("❌ Erreur : Aucun terme de recherche fourni. Exécution : python docget_duck3.py 'votre requête'")
+    print("issue : python docget_duck3.py 'votre requête'")
     sys.exit(1)
 
 
@@ -59,22 +59,22 @@ def scrape_duckduckgo(query, max_results):
 
     return results
 
-    for res in results:
-        print(f"📖 {res['title']}: {res['href']}")
+# """     for res in results:
+#         print(f"{res['title']}: {res['href']}") """
 
 # 🔹 Sauvegarde des résultats en JSON
 def save_to_json(data, filename=json_filename):
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
-    print(f"✅ Données sauvegardées dans {filename}")
+    #print(f"Données sauvegardées dans {filename}")
 
 if __name__ == "__main__":
     scraped_data = scrape_duckduckgo(SEARCH_QUERY, MAX_RESULTS)
     if scraped_data:
         save_to_json(scraped_data)
-        print(f"✅ {len(scraped_data)} résultats récupérés !")
+        #print(f"{len(scraped_data)} résultats récupérés !")
     else:
-        print("❌ Aucun résultat trouvé.")
+        print("Aucun résultat trouvé.")
 
     # BASE_DIR = os.path.dirname(os.path.abspath(__file__)) 
     # DUCK_PATH = os.path.join(BASE_DIR, "scraper_duck2.py")

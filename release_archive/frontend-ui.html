@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A&E Coding - AITrainer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .logo {
+            font-family: monospace;
+            font-size: 1.2rem;
+            white-space: pre;
+            line-height: 1.2;
+            color: #38b6ff;
+            margin-bottom: 20px;
+        }
+        .card {
+            background-color: #2d2d2d;
+            border: none;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .card-header {
+            background-color: #383838;
+            color: #38b6ff;
+            font-weight: bold;
+            border-bottom: 1px solid #444;
+        }
+        .btn-primary {
+            background-color: #38b6ff;
+            border-color: #38b6ff;
+        }
+        .btn-primary:hover {
+            background-color: #2a9fd6;
+            border-color: #2a9fd6;
+        }
+        .btn-outline-primary {
+            color: #38b6ff;
+            border-color: #38b6ff;
+        }
+        .btn-outline-primary:hover {
+            background-color: #38b6ff;
+            color: white;
+        }
+        .form-control, .form-select {
+            background-color: #383838;
+            border: 1px solid #444;
+            color: #f0f0f0;
+        }
+        .form-control:focus, .form-select:focus {
+            background-color: #404040;
+            color: #f0f0f0;
+            border-color: #38b6ff;
+            box-shadow: 0 0 0 0.25rem rgba(56, 182, 255, 0.25);
+        }
+        #logOutput {
+            background-color: #1a1a1a;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            padding: 15px;
+            border-radius: 5px;
+            height: 300px;
+            overflow-y: auto;
+        }
+        .table {
+            color: #f0f0f0;
+        }
+        .table th {
+            border-color: #444;
+        }
+        .table td {
+            border-color: #333;
+        }
+        .nav-tabs .nav-link {
+            color: #c0c0c0;
+        }
+        .nav-tabs .nav-link.active {
+            background-color: #2d2d2d;
+            color: #38b6ff;
+            border-color: #444 #444 #2d2d2d;
+        }
+        .alert-info {
+            background-color: #2a3a4a;
+            color: #9cd5f4;
+            border-color: #235a85;
+        }
+        .badge {
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-4">
+        <div class="row mb-4">
+            <div class="col-md-12 text-center">
+                <div class="logo">
+ █████╗  ██████╗ ███████╗
+██╔══██╗██╔════╝ ██╔════╝
+███████║██║  ███╗█████╗  
+██╔══██║██║   ██║██╔══╝  
+██║  ██║╚██████╔╝███████╗
+╚═╝  ╚═╝ ╚═════╝ ╚══════╝
+                </div>
+                <h1>🚀 A&E Coding - AITrainer 🚀</h1>
+                <p class="lead">Générez des données avec LangChain pour entraîner votre modèle LLM !</p>
+            </div>
+        </div>
+
+        <ul class="nav nav-tabs mb-4" id="mainTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="scraping-tab" data-bs-toggle="tab" data-bs-target="#scraping-tab-pane" type="button" role="tab">Scraping</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="queries-tab" data-bs-toggle="tab" data-bs-target="#queries-tab-pane" type="button" role="tab">Requêtes</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="results-tab" data-bs-toggle="tab" data-bs-target="#results-tab-pane" type="button" role="tab">Résultats</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="mainTabsContent">
+            <!-- Tab Scraping -->
+            <div class="tab-pane fade show active" id="scraping-tab-pane" role="tabpanel" aria-labelledby="scraping-tab" tabindex="0">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">Sélection du script</div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label for="scriptSelect" class="form-label">Choisir un script</label>
+                                    <select class="form-select" id="scriptSelect">
+                                        <option value="" disabled selected>Chargement des scripts...</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="useFileCheck" checked>
+                                        <label class="form-check-label" for="useFileCheck">
+                                            Utiliser les requêtes du fichier inputs.txt
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="mb-3 d-none" id="manualQueriesGroup">
+                                    <label for="manualQueries" class="form-label">Requêtes manuelles (une par ligne)</label>
+                                    <textarea class="form-control" id="manualQueries" rows="5" placeholder="Entrez vos requêtes, une par ligne"></textarea>
+                                </div>
+                                <button class="btn btn-primary w-100" id="executeBtn">Exécuter le script</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">Journal d'exécution</div>
+                            <div class="card-body">
+                                <div id="logOutput">
+                                    <div class="text-muted">Prêt à exécuter le script...</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Requêtes -->
+            <div class="tab-pane fade" id="queries-tab-pane" role="tabpanel" aria-labelledby="queries-tab" tabindex="0">
+                <div class="card">
+                    <div class="card-header">Gestion des requêtes (inputs.txt)</div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="queriesTextarea" class="form-label">Liste des requêtes (une par ligne)</label>
+                            <textarea class="form-control" id="queriesTextarea" rows="10" placeholder="Entrez vos requêtes, une par ligne"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <button class="btn btn-outline-primary" id="loadQueriesBtn">Charger depuis inputs.txt</button>
+                            <button class="btn btn-primary" id="saveQueriesBtn">Enregistrer dans inputs.txt</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Résultats -->
+            <div class="tab-pane fade" id="results-tab-pane" role="tabpanel" aria-labelledby="results-tab" tabindex="0">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">Fichiers générés</div>
+                            <div class="card-body">
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-outline-primary mb-3" id="refreshFilesBtn">Rafraîchir la liste</button>
+                                </div>
+                                <div class="list-group" id="filesList">
+                                    <div class="text-center text-muted py-3">Chargement des fichiers...</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header">Aperçu du fichier</div>
+                            <div class="card-body">
+                                <div id="filePreview">
+                                    <div class="alert alert-info">
+                                        Sélectionnez un fichier pour en voir le contenu
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Configuration
+        const API_BASE_URL = 'http://localhost:5000/api';
+
+        // DOM Elements
+        const scriptSelect = document.getElementById('scriptSelect');
+        const useFileCheck = document.getElementById('useFileCheck');
+        const manualQueriesGroup = document.getElementById('manualQueriesGroup');
+        const manualQueries = document.getElementById('manualQueries');
+        const executeBtn = document.getElementById('executeBtn');
+        const logOutput = document.getElementById('logOutput');
+        const queriesTextarea = document.getElementById('queriesTextarea');
+        const loadQueriesBtn = document.getElementById('loadQueriesBtn');
+        const saveQueriesBtn = document.getElementById('saveQueriesBtn');
+        const filesList = document.getElementById('filesList');
+        const filePreview = document.getElementById('filePreview');
+        const refreshFilesBtn = document.getElementById('refreshFilesBtn');
+
+        // Fonctions utilitaires
+        function appendLog(message, isError = false) {
+            const span = document.createElement('div');
+            span.textContent = message;
+            if (isError) {
+                span.style.color = '#ff6b6b';
+            }
+            logOutput.appendChild(span);
+            logOutput.scrollTop = logOutput.scrollHeight;
+        }
+
+        function clearLog() {
+            logOutput.innerHTML = '';
+        }
+
+        function formatDate(timestamp) {
+            return new Date(timestamp * 1000).toLocaleString();
+        }
+
+        function formatFileSize(bytes) {
+            if (bytes < 1024) return bytes + ' B';
+            if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(2) + ' KB';
+            return (bytes / (1024 * 1024)).toFixed(2) + ' MB';
+        }
+
+        // Chargement des scripts disponibles
+        async function loadScripts() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/scripts`);
+                const scripts = await response.json();
+                
+                scriptSelect.innerHTML = '';
+                scripts.forEach(script => {
+                    const option = document.createElement('option');
+                    option.value = script.id;
+                    option.textContent = script.name;
+                    scriptSelect.appendChild(option);
+                });
+                
+                if (scripts.length > 0) {
+                    scriptSelect.value = scripts[0].id;
+                }
+            } catch (error) {
+                console.error('Erreur lors du chargement des scripts:', error);
+                appendLog('❌ Erreur lors du chargement des scripts: ' + error.message, true);
+            }
+        }
+
+        // Chargement des requêtes
+        async function loadQueries() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/queries`);
+                const queries = await response.json();
+                queriesTextarea.value = queries.join('\n');
+            } catch (error) {
+                console.error('Erreur lors du chargement des requêtes:', error);
+                queriesTextarea.value = '';
+            }
+        }
+
+        // Sauvegarde des requêtes
+        async function saveQueries() {
+            try {
+                const queries = queriesTextarea.value
+                    .split('\n')
+                    .map(q => q.trim())
+                    .filter(q => q);
+                    
+                const response = await fetch(`${API_BASE_URL}/queries`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ queries })
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    alert('✅ Requêtes sauvegardées avec succès !');
+                } else {
+                    alert('❌ Erreur lors de la sauvegarde des requêtes : ' + (result.error || 'Erreur inconnue'));
+                }
+            } catch (error) {
+                console.error('Erreur lors de la sauvegarde des requêtes:', error);
+                alert('❌ Erreur lors de la sauvegarde des requêtes: ' + error.message);
+            }
+        }
+
+        // Exécution d'un script
+        async function executeScript() {
+            const scriptId = scriptSelect.value;
+            
+            if (!scriptId) {
+                appendLog('❌ Aucun script sélectionné', true);
+                return;
+            }
+            
+            const useFile = useFileCheck.checked;
+            let queries = [];
+            
+            if (!useFile) {
+                queries = manualQueries.value
+                    .split('\n')
+                    .map(q => q.trim())
+                    .filter(q => q);
+                    
+                if (queries.length === 0) {
+                    appendLog('❌ Aucune requête fournie', true);
+                    return;
+                }
+            }
+            
+            try {
+                clearLog();
+                appendLog('🚀 Démarrage de l\'exécution...');
+                executeBtn.disabled = true;
+                
+                const payload = {
+                    script_id: scriptId,
+                    use_file: useFile
+                };
+                
+                if (!useFile) {
+                    payload.queries = queries;
+                }
+                
+                const response = await fetch(`${API_BASE_URL}/execute`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(payload)
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    appendLog('✅ Exécution terminée');
+                    
+                    // Affiche les résultats pour chaque requête
+                    result.results.forEach(res => {
+                        appendLog(`\n🔍 Requête: ${res.query}`);
+                        
+                        if (res.success) {
+                            appendLog('✅ Succès');
+                            if (res.output) {
+                                appendLog(res.output);
+                            }
+                        } else {
+                            appendLog('❌ Échec', true);
+                            if (res.error) {
+                                appendLog(res.error, true);
+                            }
+                        }
+                    });
+                } else {
+                    appendLog(`❌ Erreur: ${result.error || 'Erreur inconnue'}`, true);
+                }
+            } catch (error) {
+                console.error('Erreur lors de l\'exécution du script:', error);
+                appendLog(`❌ Erreur: ${error.message}`, true);
+            } finally {
+                executeBtn.disabled = false;
+            }
+        }
+
+        // Chargement des fichiers de sortie
+        async function loadOutputFiles() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/output`);
+                const files = await response.json();
+                
+                filesList.innerHTML = '';
+                
+                if (files.length === 0) {
+                    filesList.innerHTML = '<div class="text-center text-muted py-3">Aucun fichier trouvé</div>';
+                    return;
+                }
+                
+                files.forEach(file => {
+                    const item = document.createElement('a');
+                    item.href = '#';
+                    item.className = 'list-group-item list-group-item-action d-flex justify-content-between align-items-center';
+                    item.dataset.filename = file.name;
+                    
+                    const nameSpan = document.createElement('span');
+                    nameSpan.textContent = file.name;
+                    
+                    const infoSpan = document.createElement('span');
+                    infoSpan.innerHTML = `
+                        <span class="badge bg-secondary me-1">${formatFileSize(file.size)}</span>
+                        <span class="badge bg-info">${formatDate(file.modified)}</span>
+                    `;
+                    
+                    item.appendChild(nameSpan);
+                    item.appendChild(infoSpan);
+                    
+                    item.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        loadFileContent(file.name);
+                    });
+                    
+                    filesList.appendChild(item);
+                });
+            } catch (error) {
+                console.error('Erreur lors du chargement des fichiers:', error);
+                filesList.innerHTML = '<div class="text-center text-danger py-3">Erreur de chargement</div>';
+            }
+        }
+
+        // Chargement du contenu d'un fichier
+        async function loadFileContent(filename) {
+            try {
+                filePreview.innerHTML = '<div class="text-center p-3">Chargement...</div>';
+                
+                // Mettre en surbrillance le fichier sélectionné
+                const items = filesList.querySelectorAll('.list-group-item');
+                items.forEach(item => {
+                    if (item.dataset.filename === filename) {
+                        item.classList.add('active');
+                    } else {
+                        item.classList.remove('active');
+                    }
+                });
+                
+                const response = await fetch(`${API_BASE_URL}/output/${filename}`);
+                const content = await response.json();
+                
+                // Affichage du contenu JSON formaté
+                filePreview.innerHTML = `
+                    <div class="d-flex justify-content-between mb-3">
+                        <h5>${filename}</h5>
+                        <button class="btn btn-sm btn-outline-primary" onclick="navigator.clipboard.writeText('${JSON.stringify(content)}')">
+                            Copier
+                        </button>
+                    </div>
+                    <pre style="max-height: 500px; overflow: auto; background: #1a1a1a; color: #d4d4d4; padding: 10px; border-radius: 5px;">${JSON.stringify(content, null, 2)}</pre>
+                `;
+            } catch (error) {
+                console.error('Erreur lors du chargement du contenu du fichier:', error);
+                filePreview.innerHTML = '<div class="alert alert-danger">Erreur lors du chargement du fichier</div>';
+            }
+        }
+
+        // Event Listeners
+        document.addEventListener('DOMContentLoaded', async () => {
+            await loadScripts();
+            await loadQueries();
+            await loadOutputFiles();
+        });
+
+        useFileCheck.addEventListener('change', () => {
+            if (useFileCheck.checked) {
+                manualQueriesGroup.classList.add('d-none');
+            } else {
+                manualQueriesGroup.classList.remove('d-none');
+            }
+        });
+
+        executeBtn.addEventListener('click', executeScript);
+        loadQueriesBtn.addEventListener('click', loadQueries);
+        saveQueriesBtn.addEventListener('click', saveQueries);
+        refreshFilesBtn.addEventListener('click', loadOutputFiles);
+    </script>
+</body>
+</html>

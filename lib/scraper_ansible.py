@@ -59,7 +59,7 @@ def scrape_page(url):
     # Extraire le bon élément contenant le texte
     content = soup.select_one("div.document")
     if not content:
-        print(f"❌ Impossible d'extraire le contenu de {url}")
+        print(f"Issue with {url}")
         return ""
 
     return content.get_text(separator="\n", strip=True)
@@ -88,7 +88,7 @@ def save_to_pdf(content_list, output_file=PDF_FILE):
         pdf.multi_cell(0, 10, text)
 
     pdf.output(output_file)
-    print(f"✅ PDF sauvegardé : {output_file}")
+    print(f"Save to PDF : {output_file}")
 
 def main():
     """Exécute le scraping et la création du PDF."""
@@ -97,7 +97,7 @@ def main():
         links = json.load(f)
 
     if not links:
-        print("❌ Aucun lien trouvé, arrêt du script.")
+        print("Issue stopping script.")
         return
 
     content_list = []

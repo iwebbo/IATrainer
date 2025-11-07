@@ -26,12 +26,12 @@ from duckduckgo_search import DDGS
 
 # Vérifier si un argument est fourni
 if len(sys.argv) < 2:
-    print("❌ Erreur : Aucun terme de recherche fourni. Exécution : python docget_duck2.py 'votre requête'")
+    print("Issue : python docget_duck2.py 'votre requête'")
     sys.exit(1)
 
 # Récupérer la requête depuis l'argument
 SEARCH_QUERY = sys.argv[1]
-MAX_RESULTS = 50
+MAX_RESULTS = 10
 
 # Création du dossier pour stocker les résultats JSON
 OUTPUT_DIR = "json\Company_results_duck_llm"
@@ -45,7 +45,7 @@ with DDGS() as ddgs:
     companies = list(ddgs.text(SEARCH_QUERY, max_results=MAX_RESULTS))
 
 for comp in companies:
-    print(f"📖 {comp['title']}: {comp['href']}")
+    print(f"{comp['title']}: {comp['href']}")
 
 # Sauvegarde des résultats
 formatted_results = {
@@ -56,4 +56,4 @@ formatted_results = {
 with open(json_filename, "w", encoding="utf-8") as json_file:
     json.dump(formatted_results, json_file, ensure_ascii=False, indent=4)
 
-print(f"✅ Données enregistrées dans {json_filename}")
+print(f"Data save to {json_filename}")

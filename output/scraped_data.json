@@ -1,0 +1,77 @@
+[
+    {
+        "title": "how to have single ansible role for both windows as well as for linux?",
+        "link": "https://stackoverflow.com/questions/65269931/how-to-have-single-ansible-role-for-both-windows-as-well-as-for-linux?r=SearchResults",
+        "summary": "I want to achieve a common ansible role. And conditions are : without using gather_facts (which basically allows us to check os_family for linux). … Now, as I am trying very hard to convert all the playbooks to ansible roles, I am just wondering is there any better way to achieve it. …"
+    },
+    {
+        "title": "Windows Ansible role is hanging/freezing because of dialog",
+        "link": "https://stackoverflow.com/questions/71917242/windows-ansible-role-is-hanging-freezing-because-of-dialog?r=SearchResults",
+        "summary": "I am mostly interested in having as many applications installed via WinGet via Ansible until there is WinGet support. … If a role fails I can install via WinGet manually, but I want the playbook with all the roles to run to the end at least. …"
+    },
+    {
+        "title": "How to create ansible galaxy roles in windows?",
+        "link": "https://stackoverflow.com/questions/46781461/how-to-create-ansible-galaxy-roles-in-windows?r=SearchResults",
+        "summary": "I am learning ansible from ansible-beginner to pro by micheal heap. It seems that ansible is not supported on windows. The book suggests running ansible from a virtual machine instead. … However, I ran into an issue when creating ansible-galaxy roles. I could not find a way to create/ initialize a role on windows. …"
+    },
+    {
+        "title": "Ansible Roles Handlers for Windows and Linux",
+        "link": "https://stackoverflow.com/questions/72627021/ansible-roles-handlers-for-windows-and-linux?r=SearchResults",
+        "summary": "Goal: I'm trying to build a role where I have handlers for Windows and Linux. Problem: Where to put the handlers? Idea 1: Put handlers in roles/handlers/main.yaml. … Issue: If its a linux machine the windows part throws an error and vice versa: ERROR! couldn't resolve module/action 'ansible.windows.win_shell'. …"
+    },
+    {
+        "title": "Test ansible roles with molecule and vagrant",
+        "link": "https://stackoverflow.com/questions/72998172/test-ansible-roles-with-molecule-and-vagrant?r=SearchResults",
+        "summary": "I would test my ansible role with molecule and vagrant in local before commit my code. But, my OS machine is windows not linux. What is the best way to accomplish my obejective? …"
+    },
+    {
+        "title": "Invoking Ansible roles in jenkins",
+        "link": "https://stackoverflow.com/questions/65744386/invoking-ansible-roles-in-jenkins?r=SearchResults",
+        "summary": "to the hosts files of ansible? … My target servers where the application will be deployed will have both Windows and Linux. What integrations are required at jenkins level for application deployment pipeline to work? Thanks, Manoj …"
+    },
+    {
+        "title": "Ansible role does not read templates in playbook dir or other role's templates dir",
+        "link": "https://stackoverflow.com/questions/47123373/ansible-role-does-not-read-templates-in-playbook-dir-or-other-roles-templates-d?r=SearchResults",
+        "summary": "Ansible version: 2.4.1 Execution environment: Windows bash Test sample: https://bitbucket.org/tsz662/jinja-test Problem Ansible does not recognize Jinja templates located in another role when the including … role is specified by absolute path. …"
+    },
+    {
+        "title": "How to pass vars file content in Ansible roles?",
+        "link": "https://stackoverflow.com/questions/39657349/how-to-pass-vars-file-content-in-ansible-roles?r=SearchResults",
+        "summary": "I am in the process of migrating to Ansible roles model and I have the following structure - .. … 8.1 VMs roles: - { role: vms } As you can see in the playbook, I am trying to create Windows 8.1 VMs but I am unable to figure out how to pass the vmname81 in the roles for the creation of 8.1 …"
+    },
+    {
+        "title": "Ansible Playbook for Windows or Linux",
+        "link": "https://stackoverflow.com/questions/58960839/ansible-playbook-for-windows-or-linux?r=SearchResults",
+        "summary": "I've created an ansible role that's able to deploy some software on systems that or either Windows or Linux based, but I'm having an issue deploying across both sets of servers simultaneously. … playbook.yml --- - hosts: all become: \"{{ 'no' if ansible_facts['os_family'] == 'Windows' else 'yes' }}\" roles: - /path/to/role …"
+    },
+    {
+        "title": "\"Undefined variable\" error on Ansible when run over Windows machines",
+        "link": "https://stackoverflow.com/questions/72216616/undefined-variable-error-on-ansible-when-run-over-windows-machines?r=SearchResults",
+        "summary": "This is a very simple Ansible playbook I run from AWX to get information about hosts, and it works as intended on Linux machines: --- - name: Get some info debug: msg: \"{{ ansible_hostname }} {{ … \\n\\nThe offending line appears to be:\\n\\n\\n- name: Get some info\\n ^ here\\n\"} How do I access and print the same Ansible facts values from a Windows machine? …"
+    },
+    {
+        "title": "Ansible - win_file module - force deletion if file in use",
+        "link": "https://stackoverflow.com/questions/66026572/ansible-win-file-module-force-deletion-if-file-in-use?r=SearchResults",
+        "summary": "We are using ansible win_file module to delete a particular folder in a Windows Server machine with the following code: - name: Delete <folderName> directory win_file: path=C:\\<pathToFolder>\\{{target_environment … }}\\<folderName> state=absent tags: <folderName> The problem: When a file from that directory is open in another program at the same time the ansible role runs, it fails saying: \"The process cannot …"
+    },
+    {
+        "title": "How to use Molecule inside a VM to test an Ansible role that installs Docker",
+        "link": "https://stackoverflow.com/questions/54765006/how-to-use-molecule-inside-a-vm-to-test-an-ansible-role-that-installs-docker?r=SearchResults",
+        "summary": "I have an Ansible role that among other things installs Docker and starts the docker daemon in a CentOS environment. … I would like to use Molecule to test it, but as my workstation is a Windows PC I have to run Molecule from a VirtualBox VM. …"
+    },
+    {
+        "title": "In Ansible, can I re-use a role like a subroutine?",
+        "link": "https://stackoverflow.com/questions/69621426/in-ansible-can-i-re-use-a-role-like-a-subroutine?r=SearchResults",
+        "summary": "Ansible v2.11 I install a lot of applications on a Windows target, and most of them follow the same routine - download, unzip, for example. - name: Download the zip file win_url: url_username: user … }}\" dest: \"C:\\\\temp\\\\{{ some_archive }}\" - name: Unzip the archive win_unzip: src: \"C:\\\\temp\\\\{{ some_archive }}\" dest: \"{{ archive_install_dir }}\" Is it possible to re-use the above role …"
+    },
+    {
+        "title": "How to access ansible facts in roles?",
+        "link": "https://stackoverflow.com/questions/68981751/how-to-access-ansible-facts-in-roles?r=SearchResults",
+        "summary": "I am currently working on some ansible automation tasks and wanted to use ansible facts in a role I created. However, I cannot access any facts. … Example: If I want to use the default IP-Address of a Windows machine, I was advised to use the following variable: {{ ansible_default_ipv4.address }} Ansible however tells me, that this variable is not …"
+    },
+    {
+        "title": "Run Ansible-Playbook on localhost on Windows",
+        "link": "https://stackoverflow.com/questions/41742573/run-ansible-playbook-on-localhost-on-windows?r=SearchResults",
+        "summary": "I know Ansible supports Windows clients/nodes. … This would be the first step for running Ansible in a datacenter with only Windows where it is not possible to even run Linux in VirtualBox. …"
+    }
+]

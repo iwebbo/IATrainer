@@ -26,7 +26,7 @@ from duckduckgo_search import DDGS
 
 # Vérifier si un argument est fourni
 if len(sys.argv) < 2:
-    print("❌ Erreur : Aucun terme de recherche fourni. Exécution : python docget_duck2.py 'votre requête'")
+    print("Issue : python docget_duck2.py 'votre requête'")
     sys.exit(1)
 
 # Récupérer la requête depuis l'argument
@@ -43,8 +43,8 @@ json_filename = os.path.join(OUTPUT_DIR, f"{SEARCH_QUERY.replace(' ', '_')}.json
 with DDGS() as ddgs:
     wiki_results = list(ddgs.text(SEARCH_QUERY, max_results=MAX_RESULTS))
 
-for res in wiki_results:
-    print(f"📖 {res['title']}: {res['href']}")
+# for res in wiki_results:
+#     print(f"📖 {res['title']}: {res['href']}")
 
 formatted_results = {
     "query": SEARCH_QUERY,
@@ -56,4 +56,4 @@ formatted_results = {
 with open(json_filename, "w", encoding="utf-8") as json_file:
     json.dump(formatted_results, json_file, ensure_ascii=False, indent=4)
 
-print(f"✅ Fichier JSON sauvegardé : {json_filename}")
+print(f"Data save : {json_filename}")

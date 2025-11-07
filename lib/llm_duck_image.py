@@ -26,7 +26,7 @@ import sys
 
 # Vérifier si un argument est fourni
 if len(sys.argv) < 2:
-    print("❌ Erreur : Aucun terme de recherche fourni. Exécution : python docget_duck2.py 'votre requête'")
+    print("Issue : python docget_duck2.py 'votre requête'")
     sys.exit(1)
 
 # Récupérer la requête depuis l'argument
@@ -44,12 +44,12 @@ json_filename = os.path.join(OUTPUT_DIR, f"{SEARCH_QUERY.replace(' ', '_')}.json
 with DDGS() as ddgs:
     images = list(ddgs.images(SEARCH_QUERY, max_results=MAX_RESULTS))
 
-for img in images:
-    print(f"📖 {img['title']}: {img['href']}")
+# for img in images:
+#     print("{img['title']}: {img['href']}")
 
 # Vérifier si des résultats ont été trouvés
 if not images:
-    print(f"❌ Aucun résultat trouvé pour '{SEARCH_QUERY}'")
+    print(f"No results found '{SEARCH_QUERY}'")
     sys.exit(1)
 
 # Structurer les résultats au format JSON
@@ -62,4 +62,4 @@ formatted_results = {
 with open(json_filename, "w", encoding="utf-8") as json_file:
     json.dump(formatted_results, json_file, ensure_ascii=False, indent=4)
 
-print(f"✅ Fichier JSON sauvegardé : {json_filename}")
+print(f"Data save to : {json_filename}")
